@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center col-12">
-                    <button class="btn btn-search" type="button">
+                    <button class="btn btn-search" type="button" onclick="window.location.href = '/search'">
                         <i class="fa fa-search" aria-hidden="true"></i> Search
                     </button>
                 </div>
@@ -99,7 +99,7 @@
     <div class="row mt-5">
 
         <div class="col-md-4 col-6 car-view">
-            <a href="#">
+            <a href="/car">
                 <div class="img-crop ">
                     <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
                 </div>
@@ -114,7 +114,7 @@
             </a>
         </div>
         <div class="col-md-4 col-6 car-view">
-            <a href="#">
+            <a href="/car">
                 <div class="img-crop ">
                     <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
                 </div>
@@ -129,7 +129,7 @@
             </a>
         </div>
         <div class="col-md-4 col-6 car-view">
-            <a href="#">
+            <a href="/car">
                 <div class="img-crop">
                     <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
                 </div>
@@ -153,7 +153,7 @@
         <hr id="searchByCatLine">
         <div class="row">
             <div class="offset-1 col-2 carCatIconHome ">
-                <a href="#">
+                <a href="/search">
                     <div class="img-crop ">
                         <img src="../../../static/img/CarCatSed.JPG" alt="" class="car-img img-fluid">
                     </div>
@@ -163,7 +163,7 @@
                 </a>
             </div>
             <div class="col-2 carCatIconHome">
-                <a href="#">
+                <a href="/search">
                     <div class="img-crop ">
                         <img src="../../../static/img/CarCatSUV.JPG" alt="" class="car-img img-fluid">
                     </div>
@@ -173,7 +173,7 @@
                 </a>
             </div>
             <div class="col-2 carCatIconHome">
-                <a href="#">
+                <a href="/search">
                     <div class="img-crop ">
                         <img src="../../../static/img/CarCatMinivan.JPG" alt="" class="car-img img-fluid">
                     </div>
@@ -183,7 +183,7 @@
                 </a>
             </div>
             <div class="col-2 carCatIconHome">
-                <a href="#">
+                <a href="/search">
                     <div class="img-crop ">
                         <img src="../../../static/img/CarCatHatch.JPG" alt="" class="car-img img-fluid">
                     </div>
@@ -193,7 +193,7 @@
                 </a>
             </div>
             <div class="col-2 carCatIconHome">
-                <a href="#">
+                <a href="/search">
                     <div class="img-crop ">
                         <img src="../../../static/img/CarCatSport.JPG" alt="" class="car-img img-fluid">
                     </div>

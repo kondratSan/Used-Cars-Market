@@ -1,13 +1,12 @@
 <%--
   Created by IntelliJ IDEA.
   User: Oleksandr
-  Date: 6/25/2019
-  Time: 4:13 PM
+  Date: 6/26/2019
+  Time: 12:18 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<div class="container mt-5">
+<div class="container my-5">
     <div class="row">
         <div class="col-md-6 blank"></div>
         <div class="col-md-6 blank"></div>
@@ -83,7 +82,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center col-12">
-                    <button class="btn btn-search" type="button" onclick="window.location.href = '/search'">
+                    <button class="btn btn-search" type="button" onclick="window.location.href = 'searchPage.html'">
                         <i class="fa fa-search" aria-hidden="true"></i> Search
                     </button>
                 </div>
@@ -94,115 +93,68 @@
     </div>
 </div>
 
-
-<div class="container cars-home pt-1">
-    <div class="row mt-5">
-
-        <div class="col-md-4 col-6 car-view">
-            <a href="/car">
-                <div class="img-crop ">
-                    <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <div class="row">
+                <div class="col-lg-4 CarSearchImgDiv">
+                    <img src="images/car.jpg" alt="" class="CarSearchImg">
                 </div>
-                <ul class="unstyle">
-                    <li>
-                        <span class="carTitle-home"> Hyundai Santa Fe 2019 </span>
-                    </li>
-                    <li>
-                        <span class="carPrice-home"><b>29&nbsp;700 $</b></span>
-                    </li>
-                </ul>
-            </a>
+                <div class="col-lg-8">
+                    <span class="carSearchTitle">Hyundai Santa Fe 2019</span> <br>
+                    <span class="carSearchPrice"><b>29&nbsp;700 $</b></span> <br>
+                    <span > <i class="fa fa-map-marker" aria-hidden="true"></i> Location </span> <br> <br>
+                    <div class="carSearchDesc">
+                    <span>The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.
+                        The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.
+                        The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <hr class="searchCarLine">
+            </div>
         </div>
-        <div class="col-md-4 col-6 car-view">
-            <a href="/car">
-                <div class="img-crop ">
-                    <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
+        <div class="col-12 mt-3">
+            <div class="row">
+                <div class="col-lg-4 CarSearchImgDiv">
+                    <img src="images/car.jpg" alt="" class="CarSearchImg">
                 </div>
-                <ul class="unstyle">
-                    <li>
-                        <span class="carTitle-home"> Hyundai Santa Fe 2019 </span>
-                    </li>
-                    <li>
-                        <span class="carPrice-home"><b>29&nbsp;700 $</b></span>
-                    </li>
-                </ul>
-            </a>
+                <div class="col-lg-8">
+                    <span class="carSearchTitle">Hyundai Santa Fe 2019</span> <br>
+                    <span class="carSearchPrice"><b>29&nbsp;700 $</b></span> <br>
+                    <span > <i class="fa fa-map-marker" aria-hidden="true"></i> Location </span> <br> <br>
+                    <div class="carSearchDesc">
+                    <span>The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.
+                        The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.
+                        The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <hr class="searchCarLine">
+            </div>
         </div>
-        <div class="col-md-4 col-6 car-view">
-            <a href="/car">
-                <div class="img-crop">
-                    <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
+        <div class="col-12 mt-3">
+            <div class="row">
+                <div class="col-lg-4 CarSearchImgDiv">
+                    <img src="images/car.jpg" alt="" class="CarSearchImg">
                 </div>
-                <ul class="unstyle">
-                    <li>
-                        <span class="carTitle-home"> Hyundai Santa Fe 2019 </span>
-                    </li>
-                    <li>
-                        <span class="carPrice-home"><b>29&nbsp;700 $</b></span>
-                    </li>
-                </ul>
-            </a>
+                <div class="col-lg-8">
+                    <span class="carSearchTitle">Hyundai Santa Fe 2019</span> <br>
+                    <span class="carSearchPrice"><b>29&nbsp;700 $</b></span> <br>
+                    <span > <i class="fa fa-map-marker" aria-hidden="true"></i> Location </span> <br> <br>
+                    <div class="carSearchDesc">
+                    <span>The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.
+                        The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.
+                        The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever. The best car ever.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <hr class="searchCarLine">
+            </div>
         </div>
     </div>
 
-</div>
-
-<div class="container searchByCat  mt-3 mb-5">
-    <h3>Search by category</h3>
-    <div class="container-fluid">
-        <hr id="searchByCatLine">
-        <div class="row">
-            <div class="offset-1 col-2 carCatIconHome ">
-                <a href="/search">
-                    <div class="img-crop ">
-                        <img src="../../../static/img/CarCatSed.JPG" alt="" class="car-img img-fluid">
-                    </div>
-                    <div class="carCatTitle-div">
-                        <span class="carCatTitle-home"> Sedan </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 carCatIconHome">
-                <a href="/search">
-                    <div class="img-crop ">
-                        <img src="../../../static/img/CarCatSUV.JPG" alt="" class="car-img img-fluid">
-                    </div>
-                    <div class="carCatTitle-div">
-                        <span class="carCatTitle-home"> SUV </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 carCatIconHome">
-                <a href="/search">
-                    <div class="img-crop ">
-                        <img src="../../../static/img/CarCatMinivan.JPG" alt="" class="car-img img-fluid">
-                    </div>
-                    <div class="carCatTitle-div">
-                        <span class="carCatTitle-home"> Minivan </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 carCatIconHome">
-                <a href="/search">
-                    <div class="img-crop ">
-                        <img src="../../../static/img/CarCatHatch.JPG" alt="" class="car-img img-fluid">
-                    </div>
-                    <div class="carCatTitle-div">
-                        <span class="carCatTitle-home"> Hatch Back </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 carCatIconHome">
-                <a href="/search">
-                    <div class="img-crop ">
-                        <img src="../../../static/img/CarCatSport.JPG" alt="" class="car-img img-fluid">
-                    </div>
-                    <div class="carCatTitle-div " style="margin-top: 7px">
-                        <span class="carCatTitle-home"> Sports Car </span>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </div>
 </div>

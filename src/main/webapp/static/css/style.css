@@ -317,3 +317,91 @@ html,body{
     font-size: 30px;
     width: 200px;
 }
+
+.CarSearchImgDiv{
+    height: 200px;
+}
+
+.CarSearchImg{
+    height: 100%;
+}
+
+.searchCarLine{
+    border: none;
+    height: 2px;
+    background-color: silver;
+}
+
+
+.carSearchTitle{
+    font-size: 16px;
+    color: #2f6bc2;
+}
+
+.carSearchPrice{
+    font-size: 20px;
+    color: #3c9706 ;
+}
+
+.carSearchDesc{
+    height: 50px;
+    width: 60%;
+    overflow: hidden;
+}
+
+
+.carPageimgDiv{
+    height: 500px;
+    overflow: hidden;
+}
+
+.carPagePrice{
+    color: #3c9706;
+    text-align: end;
+}
+
+.carPageLine{
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+.carPageTitle, .carPagePrice{
+    margin: -10px;
+}
+
+#carPageSellerDiv{
+    background-color: #b8efe6;
+    width: 110%;
+    overflow: hidden;
+}
+
+.carPageSellerTitle{
+    text-align: center;
+    font-size: 19px;
+}
+
+#sellerIcon{
+    width: 30px;
+}
+
+.carSellSellerDivRightSide{
+    color: #9b9b9b;
+}
+
+.carSellDescription{
+    /*height: 100px;*/
+    /*width: 100%;*/
+    overflow: hidden;
+}
+
+.carSellCarInfo{
+    background-color: #fcfcfc;
+    width: 110%;
+}
+
+.carPageInfoLine{
+    border: none;
+    height: 1px;
+    background-color: silver;
+}
