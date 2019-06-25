@@ -98,7 +98,7 @@
         <div class="col-12 mt-3">
             <div class="row">
                 <div class="col-lg-4 CarSearchImgDiv">
-                    <img src="images/car.jpg" alt="" class="CarSearchImg">
+                    <img src="../../../static/img/car.jpg" alt="" class="CarSearchImg">
                 </div>
                 <div class="col-lg-8">
                     <span class="carSearchTitle">Hyundai Santa Fe 2019</span> <br>
@@ -118,7 +118,7 @@
         <div class="col-12 mt-3">
             <div class="row">
                 <div class="col-lg-4 CarSearchImgDiv">
-                    <img src="images/car.jpg" alt="" class="CarSearchImg">
+                    <img src="../../../static/img/car.jpg" alt="" class="CarSearchImg">
                 </div>
                 <div class="col-lg-8">
                     <span class="carSearchTitle">Hyundai Santa Fe 2019</span> <br>
@@ -138,7 +138,7 @@
         <div class="col-12 mt-3">
             <div class="row">
                 <div class="col-lg-4 CarSearchImgDiv">
-                    <img src="images/car.jpg" alt="" class="CarSearchImg">
+                    <img src="../../../static/img/car.jpg" alt="" class="CarSearchImg">
                 </div>
                 <div class="col-lg-8">
                     <span class="carSearchTitle">Hyundai Santa Fe 2019</span> <br>
