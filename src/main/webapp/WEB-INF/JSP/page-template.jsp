@@ -50,7 +50,7 @@
 </header>
 
 
-<jsp:include page="${currentPage }" />
+<jsp:include page="${currentPage }"/>
 
 <footer>
     <div class="container">

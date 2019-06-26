@@ -50,7 +50,14 @@
 </header>
 
 
-<jsp:include page="${currentPage }" />
+<jsp:include page="${currentPage }"/>
+
+<form class="mt-5 mb-5" action="/car">
+    <input type="text" class="form-control" name="uname" placeholder="Email">
+    <input type="password" class="form-control" name="pass">
+    <input type="submit" value="Login"
+           class="btn float-right login_btn">
+</form>
 
 <footer>
     <div class="container">
