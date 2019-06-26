@@ -13,14 +13,11 @@
         <div class="col-md-6 blank"></div>
         <div class="col-md-6 blank"></div>
 
-        <h1>
-            <%
-//                out.print(session.getAttribute("username") == null);
-//                if(session.getAttribute("username") == null)
-//                    out.print("Should be working");
-                response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");
-            %>
-        </h1>
+        <%--<h1>--%>
+            <%--<%--%>
+                <%--response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");--%>
+            <%--%>--%>
+        <%--</h1>--%>
 
         <div class="col-12">
             <span><h2 class="carPageTitle"><b>Hyundai Title of the car Hyundai Hyundai <br></b></h2></span><br>

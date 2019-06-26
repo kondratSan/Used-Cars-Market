@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet("/login")
 public class LoginController extends AbstractController {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String uname = req.getParameter("uname");
         String pass = req.getParameter("pass");
         HttpSession session = req.getSession();

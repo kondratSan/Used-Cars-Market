@@ -19,7 +19,9 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 </head>
 <body>
-
+<%--<%--%>
+    <%--response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");--%>
+<%--%>--%>
 <header>
     <div class="container-fluid fixed-top top-bar">
         <div class="container">
