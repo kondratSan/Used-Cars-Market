@@ -5,17 +5,18 @@ import java.util.Objects;
 public class User {
 
     private int id;
+
     private String firstName;
 
     private String lastName;
 
     private String email;
 
-    private short age;
+    private int age;
 
     private String phoneNumber;
 
-    private int city_id;
+    private String city;
 
     private String password;
 
@@ -53,11 +54,11 @@ public class User {
         this.email = email;
     }
 
-    public short getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(short age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -69,12 +70,12 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getCity_id() {
-        return city_id;
+    public String getCity() {
+        return city;
     }
 
-    public void setCity_id(int city_id) {
-        this.city_id = city_id;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getPassword() {
@@ -93,18 +94,17 @@ public class User {
         this.role = role;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id && age == user.age && city_id == user.city_id && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(password, user.password) && Objects.equals(role, user.role);
+        return id == user.id && age == user.age && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(city, user.city) && Objects.equals(password, user.password) && Objects.equals(role, user.role);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, email, age, phoneNumber, city_id, password, role);
+        return Objects.hash(id, firstName, lastName, email, age, phoneNumber, city, password, role);
     }
 
     @Override

@@ -405,3 +405,7 @@ html,body{
     height: 1px;
     background-color: silver;
 }
+
+#errRegMessage{
+    color: red;
+}

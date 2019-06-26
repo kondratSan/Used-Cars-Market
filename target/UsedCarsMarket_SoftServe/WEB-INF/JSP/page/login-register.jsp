@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.softserve.ita.model.User" %><%--
   Created by IntelliJ IDEA.
   User: Oleksandr
   Date: 6/26/2019
@@ -22,7 +22,7 @@
 
                     </div>
                     <div class="card-body mt-3">
-                        <form action="/login">
+                        <form action="/login" method="post">
                             <div class="container">
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend prepend-login">
@@ -60,40 +60,38 @@
                         <h3>New here? Sigh Up</h3>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form onsubmit="return validate()" action="/user" method="post">
                             <div class="container">
+                                <h3 id="errRegMessage"><%=(request.getAttribute("errMessage") == null) ? ""
+                                        : request.getAttribute("errMessage")%></h3>
                                 <div class="input-group form-group">
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
                                 </div>
                                 <div class="input-group form-group">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
                                 </div>
                                 <div class="input-group form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text" class="form-control" name="email" placeholder="Email" required>
                                 </div>
                                 <div class="input-group form-group">
-                                    <input type="number" class="form-control" placeholder="Age">
+                                    <input type="number" class="form-control" name="age" placeholder="Age" required>
                                 </div>
                                 <div class="input-group form-group">
-                                    <input type="text" class="form-control" placeholder="Phone number">
+                                    <input type="text" class="form-control" name="phoneNumber" placeholder="Phone number" required>
+                                </div>
+                                <%--<div class="input-group form-group">--%>
+                                    <%--<select class="browser-default custom-select" >--%>
+                                        <%--<option selected>Region</option>--%>
+                                        <%--<option value="1">Region1</option>--%>
+                                        <%--<option value="2">Region2</option>--%>
+                                        <%--<option value="3">Region3</option>--%>
+                                    <%--</select>--%>
+                                <%--</div>--%>
+                                <div class="input-group form-group">
+                                    <input type="text" class="form-control" name="city" placeholder="City" required>
                                 </div>
                                 <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Region</option>
-                                        <option value="1">Region1</option>
-                                        <option value="2">Region2</option>
-                                        <option value="3">Region3</option>
-                                    </select>
-                                </div>
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>City</option>
-                                        <option value="1">City1</option>
-                                        <option value="2">City2</option>
-                                        <option value="3">City3</option>
-                                    </select></div>
-                                <div class="input-group form-group">
-                                    <input type="text" class="form-control" placeholder="Password">
+                                    <input type="text" class="form-control" name="password" placeholder="Password" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" value="Register"

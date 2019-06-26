@@ -26,7 +26,7 @@ public class GetUserTest extends HttpServlet {
 
         req.setAttribute("user", user);
 
-        RequestDispatcher rd = req.getRequestDispatcher("page/test.jsp");
+        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/JSP/test.jsp");
         rd.forward(req, resp);
 
 
