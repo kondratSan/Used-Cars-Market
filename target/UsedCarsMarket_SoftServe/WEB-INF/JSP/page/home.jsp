@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Oleksandr
@@ -146,6 +147,8 @@
     </div>
 
 </div>
+
+<h1>Welcome ${username}</h1>
 
 <div class="container searchByCat  mt-3 mb-5">
     <h3>Search by category</h3>

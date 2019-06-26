@@ -22,36 +22,28 @@
 
                     </div>
                     <div class="card-body mt-3">
-                        <form>
+                        <form action="/login">
                             <div class="container">
-                                <%--<form action="/login-register">--%>
-                                    <%--<div class="input-group form-group">--%>
-                                        <%--<div class="input-group-prepend prepend-login">--%>
-                                                            <%--<span class="input-group-text"><i--%>
-                                                                    <%--class="fa fa-user"></i></span>--%>
-                                        <%--</div>--%>
-                                        <%--<input type="text" class="form-control" name="uname" placeholder="Email">--%>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend prepend-login">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" name="uname" placeholder="Email">
 
-                                    <%--</div>--%>
-                                    <%--<div class="input-group form-group">--%>
-                                        <%--<div class="input-group-prepend prepend-login">--%>
-                                                            <%--<span class="input-group-text"><i--%>
-                                                                    <%--class="fa fa-key"></i></span>--%>
-                                        <%--</div>--%>
-                                        <%--<input type="password" class="form-control" name="pass"--%>
-                                               <%--placeholder="Password">--%>
-                                    <%--</div>--%>
-                                    <%--<div class="form-group mt-4">--%>
-                                        <%--<input type="submit" value="Login"--%>
-                                               <%--class="btn float-right login_btn">--%>
-                                    <%--</div>--%>
-                                <%--</form>--%>
-                                    <form class="mt-5 mb-5" action="/car">
-                                        <input type="text" class="form-control" name="uname" placeholder="Email">
-                                        <input type="password" class="form-control" name="pass">
-                                        <input type="submit" value="Login"
-                                               class="btn float-right login_btn">
-                                    </form>
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend prepend-login">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" name="pass"
+                                           placeholder="Password">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <input type="submit" value="Login"
+                                           class="btn float-right login_btn">
+                                </div>
                             </div>
                         </form>
                     </div>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 </head>
 <body>
+
 <header>
     <div class="container-fluid fixed-top top-bar">
         <div class="container">
@@ -32,12 +33,21 @@
                     <div class="row p-2">
                         <div class="col-12 d-flex justify-content-center justify-content-sm-end loginDivHome">
                             <img src="/static/img/humanIcon.JPG" height="35">
-                            <a href="/login" class="loginHome"> &nbsp;&nbsp;&nbsp;Log&nbsp;in&nbsp;/&nbsp;Register&nbsp;&nbsp;</a>
+                            <a href="/login-register" class="loginHome"> &nbsp;&nbsp;&nbsp;Log&nbsp;in&nbsp;/&nbsp;Register&nbsp;&nbsp;</a>
                         </div>
                         <div class="col-12 p-2 d-flex justify-content-center justify-content-sm-end">
                             <button type="button" onclick="window.location.href = 'sellCar.html'" class="btn btn-info">
                                 <b class="sell-button"><i class="fa fa-plus "></i> SELL A CAR</b>
                             </button>
+
+
+                              <%--LOG OUT BUTTON--%>
+                            <button type="button" onclick="window.location.href = '/logout'" class="btn btn-info">
+                                <b class="sell-button"> Log out!</b>
+                            </button>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -51,13 +61,6 @@
 
 
 <jsp:include page="${currentPage }"/>
-
-<form class="mt-5 mb-5" action="/car">
-    <input type="text" class="form-control" name="uname" placeholder="Email">
-    <input type="password" class="form-control" name="pass">
-    <input type="submit" value="Login"
-           class="btn float-right login_btn">
-</form>
 
 <footer>
     <div class="container">

@@ -13,15 +13,7 @@ public class LoginRegisterController extends AbstractController {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String uname = req.getParameter("uname");
-        String pass = req.getParameter("pass");
-
-        forwardToPage("page/home.jsp", req, resp);
-        if(uname.equals("sasha") && pass.equals("kondrat")) {
-            forwardToPage("page/home.jsp", req, resp);
-        }
-        else {
-            forwardToPage("page/carPage.jsp", req, resp);
-        }
+        forwardToPage("page/login-register.jsp", req, resp);
     }
+
 }

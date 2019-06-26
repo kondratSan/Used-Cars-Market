@@ -6,12 +6,22 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <div class="container">
     <div class="row" style="margin-bottom: 150px; margin-top: 70px">
         <div class="col-md-6 blank"></div>
         <div class="col-md-6 blank"></div>
+
+        <h1>
+            <%
+//                out.print(session.getAttribute("username") == null);
+//                if(session.getAttribute("username") == null)
+//                    out.print("Should be working");
+                response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");
+            %>
+        </h1>
+
         <div class="col-12">
             <span><h2 class="carPageTitle"><b>Hyundai Title of the car Hyundai Hyundai <br></b></h2></span><br>
             <span><h2 class="carPagePrice"><b>29&nbsp;700&nbsp;$</b></h2></span>
@@ -45,6 +55,7 @@
             </div>
 
         </div>
+
         <div class="col-12 col-lg-8 carPageCarSide p-2">
             <div class="carPageimgDiv">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
