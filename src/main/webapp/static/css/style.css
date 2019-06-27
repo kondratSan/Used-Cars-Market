@@ -22,8 +22,8 @@
     color: white;
 }
 
-.loginHome{
-
+.logo-img-div{
+    border-radius: 50%;
 }
 
 /*u{*/
@@ -406,6 +406,8 @@ html,body{
     background-color: silver;
 }
 
-#errRegMessage{
+.errRegMessage{
     color: red;
+    /*text-shadow: 2px 2px 1px black;*/
+    margin-bottom: 10px;
 }

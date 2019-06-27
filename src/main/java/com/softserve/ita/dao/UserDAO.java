@@ -7,8 +7,7 @@ import java.sql.*;
 
 public class UserDAO {
 
-    public String addUser(User user)
-    {
+    public String addUser(User user) {
         String firstName = user.getFirstName();
         String lastName = user.getLastName();
         String email = user.getEmail();
@@ -21,14 +20,13 @@ public class UserDAO {
         PreparedStatement preparedStatement = null;
         Statement st = null;
 
-        try
-        {
+        try {
             conn = ConnectionPool.getConnection();
             st = conn.createStatement();
             ResultSet rs = st.executeQuery("Select * from user where email = \"" + email + "\"");
-            if(rs.next()){
+            if (rs.next()) {
                 System.out.println("noway!");
-                return "User with such email address is already registered!";  // On failure, send a message from here.
+                return "! Email already registered";  // On failure, send a message from here.
             }
 
 
@@ -42,20 +40,47 @@ public class UserDAO {
             preparedStatement.setString(6, city);
             preparedStatement.setString(7, password);
 
-            int i= preparedStatement.executeUpdate();
+            int i = preparedStatement.executeUpdate();
 
-            if (i!=0)  //Just to ensure data has been inserted into the database
+            if (i != 0)  //Just to ensure data has been inserted into the database
                 return "SUCCESS";
-        }
-        catch(SQLException e)
-        {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return "Oops.. Something went wrong there..!";  // On failure, send a message from here.
     }
-    
-    
-    public User getUserById(int id){
+
+    public String authenticateUser(User user) {
+
+        String email = user.getEmail(); //Keeping user entered values in temporary variables.
+        String password = user.getPassword();
+
+        Connection conn = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+
+        String query = "select * from user where email = ? and password = ?";
+
+        try {
+            conn = ConnectionPool.getConnection();
+            statement = conn.prepareStatement(query); //Statement is used to write queries. Read more about it.
+            statement.setString(1, email);
+            statement.setString(2, password);
+            resultSet = statement.executeQuery(); //Here table name is users and email,password are columns. fetching all the records and storing in a resultSet.
+
+            if (resultSet.next()) {
+                System.out.println(resultSet.getString("role"));
+                return "SUCCESS";
+            }
+
+        } catch (SQLException | NullPointerException e) {
+            e.printStackTrace();
+        }
+        return "! Invalid user credentials"; // Just returning appropriate message otherwise
+    }
+
+
+    public User getUserById(int id) {
         User User = new User();
 
         try {
@@ -63,7 +88,7 @@ public class UserDAO {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/usedcarsmarket?useSSL=false&serverTimezone=UTC", "root", "root");
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("Select * from user where id=" + id);
-            if(rs.next()){
+            if (rs.next()) {
                 User.setId(rs.getInt("id"));
                 User.setFirstName(rs.getString("firstName"));
                 User.setLastName(rs.getString("lastName"));
@@ -74,7 +99,7 @@ public class UserDAO {
                 User.setPassword(rs.getString("password"));
                 User.setRole(rs.getString("role"));
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

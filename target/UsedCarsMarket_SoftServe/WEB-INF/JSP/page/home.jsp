@@ -148,12 +148,9 @@
 
 </div>
 
-<%--<h1>Welcome ${username}</h1>--%>
+<h1>Welcome ${email}</h1>
 
-<form action="/getusertest">
-    <input type="number" name="id">
-    <input type="submit" value="GetUserByid">
-</form>
+
 
 <div class="container searchByCat  mt-3 mb-5">
     <h3>Search by category</h3>
