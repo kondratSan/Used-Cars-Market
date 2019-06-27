@@ -6,30 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" line="31" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" line="28" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="084d87c5-ecf4-48cf-a732-7d1959831762" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SellCarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/sellCar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/ViewAllUsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/viewAllUsers.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softserve/ita/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/ita/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/GetUserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SellCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SellCarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/login-register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/login-register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/JSP/page-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/JSP/page-template.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/JSP/page/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/JSP/page/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/JSP/page/login-register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/JSP/page/login-register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/controller/page/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/controller/page/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/controller/page/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/controller/page/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/controller/page/SellCarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/WEB-INF/classes/com/softserve/ita/controller/page/SellCarController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/UsedCarsMarket_SoftServe/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/softserve/ita/controller/page/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/softserve/ita/controller/page/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/softserve/ita/controller/page/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/softserve/ita/controller/page/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/softserve/ita/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/softserve/ita/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/softserve/ita/controller/page/SellCarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/softserve/ita/controller/page/SellCarController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,22 +51,22 @@
     <session id="-1662925774">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
           <entry key="html" value="1" />
-          <entry key="java" value="41" />
+          <entry key="java" value="54" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="25" />
+          <entry key="jsp" value="32" />
           <entry key="sql" value="1" />
           <entry key="xml" value="4" />
         </counts>
@@ -81,8 +75,8 @@
         <counts>
           <entry key="CSS" value="4" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="41" />
-          <entry key="JSP" value="25" />
+          <entry key="JAVA" value="54" />
+          <entry key="JSP" value="32" />
           <entry key="JavaScript" value="1" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="4" />
@@ -90,19 +84,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="83" />
+          <entry key="css" value="164" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="2722" />
+          <entry key="java" value="2768" />
           <entry key="js" value="83" />
-          <entry key="jsp" value="1872" />
+          <entry key="jsp" value="2421" />
           <entry key="xml" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="83" />
-          <entry key="JAVA" value="2722" />
-          <entry key="JSP" value="1872" />
+          <entry key="CSS" value="164" />
+          <entry key="JAVA" value="2768" />
+          <entry key="JSP" value="2421" />
           <entry key="JavaScript" value="83" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="78" />
@@ -112,37 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-              <folding>
-                <element signature="e#1806#1812#0#HTML" expanded="true" />
-                <element signature="e#2009#2015#0#HTML" expanded="true" />
-                <element signature="e#2034#2040#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/sellCar.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3621">
-              <caret line="213" selection-start-line="213" selection-end-line="213" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+            <state relative-caret-position="132">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,7 +122,19 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LogoutController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginRegisterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,13 +143,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/CarController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/viewAllUsers.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="680">
+              <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/login-register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -177,35 +163,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SellCarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="170">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/home.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="150" column="19" selection-start-line="150" selection-start-column="19" selection-end-line="150" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/dao/UserDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="35" selection-start-line="33" selection-start-column="24" selection-end-line="35" />
+            <state relative-caret-position="289">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,11 +184,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" selection-start-line="15" selection-end-line="16" />
+            <state relative-caret-position="187">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/ViewAllUsersController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1250">
+              <caret line="415" column="19" selection-start-line="415" selection-start-column="19" selection-end-line="415" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -240,17 +226,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>car.</find>
-      <find>style.cs</find>
-      <find>CarSearchImgDiv</find>
-      <find>carsea</find>
-      <find>images/</find>
-      <find>href</find>
-      <find>ima</find>
-      <find>login-</find>
-      <find>images/l</find>
-      <find>img</find>
-      <find>/login</find>
       <find>sell</find>
       <find>welc</find>
       <find>Alien</find>
@@ -266,10 +241,21 @@
       <find>logout</find>
       <find>red</find>
       <find>sess</find>
-      <find>sell</find>
       <find>LOGIN</find>
       <find>&quot;logo</find>
+      <find>logo-im</find>
+      <find>welco</find>
+      <find>top-b</find>
+      <find>header</find>
+      <find>card</find>
+      <find>card-f</find>
       <find>logo</find>
+      <find>search</find>
+      <find>button</find>
+      <find>offse</find>
+      <find>carsea</find>
+      <find>searchcarli</find>
+      <find>blo</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img/</replace>
@@ -297,7 +283,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/listener/ApplicationListener.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/searcgPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SearchController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/searchPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginRegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LogoutController.java" />
@@ -306,7 +291,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/Redirect.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/carPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/test.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/GetUserTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/util/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/util/ConnectionPool.java" />
@@ -318,12 +302,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/CarController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/sellCar.jsp.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/sellCar.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SellCarController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SellCarController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/ViewAllUsersController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/viewAllUsers.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/GetUserTest.java" />
       </list>
     </option>
   </component>
@@ -376,9 +364,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1294" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="1295" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -387,7 +375,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -529,6 +516,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -536,23 +524,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561631012491" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561640018863" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/New folder/HospitalSystem" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Oleksandr\IdeaProjects\UsedCarsMarket_SoftServe\src\main\webapp\WEB-INF\JSP\page" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.softserve.ita.controller.page" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Oleksandr\IdeaProjects\UsedCarsMarket_SoftServe\src\main\webapp\WEB-INF\JSP" />
       <recent name="C:\Users\Oleksandr\IdeaProjects\UsedCarsMarket_SoftServe\src\main\webapp\WEB-INF\JSP\page" />
       <recent name="C:\Users\Oleksandr\IdeaProjects\UsedCarsMarket_SoftServe\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.softserve.ita.controller.page" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Oleksandr\IdeaProjects\UsedCarsMarket_SoftServe\src\main\webapp\WEB-INF\JSP\page" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -654,12 +645,13 @@
       <workItem from="1561410008010" duration="446000" />
       <workItem from="1561410611261" duration="4819000" />
       <workItem from="1561461863273" duration="20975000" />
-      <workItem from="1561542278900" duration="38449000" />
+      <workItem from="1561542278900" duration="39509000" />
+      <workItem from="1561633726284" duration="6527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65035000" />
+    <option name="totallyTimeSpent" value="72622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,9 +664,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29865772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30268458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -684,14 +675,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7013423" visible="true" weight="0.34750733" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.70067114" visible="true" weight="0.34750733" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32844576" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.29865772" side_tool="true" visible="true" weight="0.34750733" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.29932886" side_tool="true" visible="true" weight="0.34750733" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3328446" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -773,23 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="1" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/searchPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -797,25 +771,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/Redirect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/Redirect.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6377e0f1-926e-4b0e-ac51-d70391125006/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,16 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/util/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -889,16 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/GetUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -909,74 +847,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/login-register.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/sellCar.jsp.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="34" column="68" lean-forward="true" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginRegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/carPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="425">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/util/ConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/sellCar.jsp.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="37" selection-end-line="205" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="18" column="72" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="150" column="19" selection-start-line="150" selection-start-column="19" selection-end-line="150" selection-end-column="19" />
+        <state relative-caret-position="122">
+          <caret line="94" column="59" lean-forward="true" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/searchPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/carPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/sellCar.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="197" column="44" selection-start-line="197" selection-start-column="44" selection-end-line="197" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" selection-start-line="15" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1250">
+          <caret line="415" column="19" selection-start-line="415" selection-start-column="19" selection-end-line="415" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/CarController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/viewAllUsers.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="680">
+          <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/login-register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -985,56 +953,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SellCarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="170">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/dao/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="35" selection-start-line="33" selection-start-column="24" selection-end-line="35" />
+        <state relative-caret-position="289">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/GetUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+        <state relative-caret-position="289">
+          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/ViewAllUsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LogoutController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/ita/controller/page/LoginRegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        <state relative-caret-position="250">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
-            <element signature="e#1806#1812#0#HTML" expanded="true" />
-            <element signature="e#2009#2015#0#HTML" expanded="true" />
-            <element signature="e#2034#2040#0#HTML" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

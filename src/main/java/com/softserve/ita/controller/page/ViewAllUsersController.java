@@ -10,15 +10,14 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet("/search")
-public class SearchController extends AbstractController {
+@WebServlet("/viewAllUsers")
+public class ViewAllUsersController extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         if(session.getAttribute("email") == null){
             resp.sendRedirect("/home");
         } else {
-            forwardToPage("page/searchPage.jsp", req, resp);
-        }
-    }
+            forwardToPage("page/viewAllUsers.jsp", req, resp);
+        }    }
 }

@@ -7,6 +7,8 @@
 .top-bar{
     border-bottom: silver 1px solid;
     background-color: #f2f3f4;
+    /*background-color: black;*/
+
 }
 
 .loginHome{
@@ -24,6 +26,7 @@
 
 .logo-img-div{
     border-radius: 50%;
+    /*border: black solid 2px;*/
 }
 
 /*u{*/
@@ -198,17 +201,6 @@ footer{
 
 
 
-
-
-html,body{
-    /*background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*height: 100%;*/
-    /*font-family: 'Numans', sans-serif;*/
-}
-
-
 .card{
     /*height: 370px;*/
     margin-top: auto;
@@ -322,6 +314,10 @@ html,body{
     height: 200px;
 }
 
+.viewAllUsersHumanImg{
+    width: 100%;
+}
+
 .CarSearchImg{
     height: 100%;
 }
@@ -410,4 +406,12 @@ html,body{
     color: red;
     /*text-shadow: 2px 2px 1px black;*/
     margin-bottom: 10px;
+}
+
+/*.viewUserCard{*/
+    /*height: 100%;*/
+/*}*/
+
+.viewAllUsersLeftText{
+    color: #9b9b9b;
 }

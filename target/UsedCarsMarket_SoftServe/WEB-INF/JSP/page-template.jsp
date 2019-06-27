@@ -14,23 +14,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-    <script src="/static/js/script.js"></script>
 </head>
 <body>
-<%--<%--%>
-<%--response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");--%>
-<%--%>--%>
+
 <header>
     <div class="container-fluid fixed-top top-bar">
         <div class="container">
             <div class="row ">
                 <div class="d-flex justify-content-center justify-content-sm-start p-2 col-md-2 col-sm-6 logo order-md-1">
-                    <div class="logo-img-div shadow">
+                    <div class="logo-img-div shadow" >
                         <a href="/home">
-                            <img class="logo-img" src="/static/img/logo2.png" height="85">
+                            <img src="/static/img/logo2.png" height="85">
                         </a>
                     </div>
                 </div>
