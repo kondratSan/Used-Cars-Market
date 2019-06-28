@@ -14,10 +14,12 @@ import java.io.IOException;
 public class ViewAllUsersController extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        if(session.getAttribute("email") == null){
-            resp.sendRedirect("/home");
-        } else {
-            forwardToPage("page/viewAllUsers.jsp", req, resp);
-        }    }
+//        HttpSession session = req.getSession();
+//        if(session.getAttribute("email") != null){
+//            forwardToPage("page/viewAllUsers.jsp", req, resp);
+//        } else {
+//            resp.sendRedirect("/home");
+//        }
+        forwardToPage("page/viewAllUsers.jsp", req, resp);
+    }
 }

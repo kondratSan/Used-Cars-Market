@@ -15,7 +15,6 @@ public class UserController extends AbstractController {
 
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //Copying all the input parameters in to local variables
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
@@ -27,7 +26,6 @@ public class UserController extends AbstractController {
 
 
         User user = new User();
-        //Using Java Beans - An easiest way to play with group of related data
         user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setEmail(email);
@@ -36,17 +34,15 @@ public class UserController extends AbstractController {
         user.setCity(city);
         user.setPassword(password);
 
-//        RegisterDao registerDao = new RegisterDao();
         UserDAO userDAO = new UserDAO();
 
-        //The core Logic of the Registration application is present here. We are going to insert user data in to the database.
         String userRegistered = userDAO.addUser(user);
 
-        if(userRegistered.equals("SUCCESS"))   //On success, you can display a message to user on Home page
+        if(userRegistered.equals("SUCCESS"))
         {
             response.sendRedirect("/home");
         }
-        else   //On Failure, display a meaningful message to the User.
+        else
         {
             System.out.println(userRegistered);
             request.setAttribute("errMessage", userRegistered);

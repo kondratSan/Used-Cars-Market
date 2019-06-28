@@ -92,13 +92,11 @@
 
             </div>
         </div>
-        <div class="offset-1 col-3  viewAllUsersButtonDiv">
-            <button class="btn btn-danger" type="button" onclick="window.location.href = '/viewAllUsers'">
-                View all users
-            </button>
-        </div>
+
     </div>
 </div>
+
+<h1>You are:  <% out.print(session.getAttribute("role") + " ");  out.print(session.getAttribute("email"));%></h1>
 
 
 <div class="container cars-home pt-1">
@@ -211,6 +209,11 @@
                         <span class="carCatTitle-home"> Sports Car </span>
                     </div>
                 </a>
+            </div>
+            <div class="offset-5 col-3  viewAllUsersButtonDiv">
+                <button class="btn btn-danger" type="button" onclick="window.location.href = '/viewAllUsers'">
+                    View all users
+                </button>
             </div>
 
         </div>

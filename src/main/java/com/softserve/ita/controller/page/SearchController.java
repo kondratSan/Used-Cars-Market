@@ -14,11 +14,12 @@ import java.io.IOException;
 public class SearchController extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        if(session.getAttribute("email") == null){
-            resp.sendRedirect("/home");
-        } else {
-            forwardToPage("page/searchPage.jsp", req, resp);
-        }
+//        HttpSession session = req.getSession();
+//        if(session.getAttribute("email") == null){
+//            resp.sendRedirect("/home");
+//        } else {
+//            forwardToPage("page/searchPage.jsp", req, resp);
+//        }
+        forwardToPage("page/searchPage.jsp", req, resp);
     }
 }
