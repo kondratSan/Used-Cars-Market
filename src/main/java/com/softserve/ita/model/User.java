@@ -12,7 +12,7 @@ public class User {
 
     private String email;
 
-    private int age;
+    private Integer age;
 
     private String phoneNumber;
 
@@ -22,7 +22,7 @@ public class User {
 
     private String role;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 

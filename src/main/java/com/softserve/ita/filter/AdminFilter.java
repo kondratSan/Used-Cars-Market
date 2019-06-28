@@ -12,26 +12,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/login", "/home"})
-public class AuthorizedUserFilter extends HttpFilter {
+@WebFilter("/profile")
+public class AdminFilter extends HttpFilter {
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         HttpSession session = req.getSession(true);
+        User user = (User) session.getAttribute("user");
 
-        if (session.getAttribute("user") == null) {
+        if (!user.getRole().equals("admin")) {
             chain.doFilter(req, res);
         } else {
-            res.sendRedirect("/loggedHome");
-//            User user = (User) session.getAttribute("user");
-//            switch (user.getRole()) {
-//                case "user":
-//                    res.sendRedirect("/loggedHome");
-//                    break;
-//                case "admin":
-//                    res.sendRedirect("/car");
-//                    break;
-//            }
+            res.sendRedirect("/admin-profile");
         }
     }
 }

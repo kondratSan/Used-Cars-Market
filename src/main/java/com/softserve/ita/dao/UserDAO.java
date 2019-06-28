@@ -5,7 +5,6 @@ import com.softserve.ita.util.ConnectionPool;
 import com.softserve.ita.util.DBUtil;
 
 import java.sql.*;
-import java.util.Optional;
 
 public class UserDAO {
 
@@ -23,13 +22,13 @@ public class UserDAO {
         ResultSet rs = null;
 
         try ( Connection conn = ConnectionPool.getConnection()){
-            st = conn.createStatement();
-            rs = st.executeQuery("Select * from user where email = \"" + email + "\"");
+            String query = "Select * from user where email = \"" + email + "\"";
+            preparedStatement = conn.prepareStatement(query);
+            rs = preparedStatement.executeQuery();
             if (rs.next()) {
-                System.out.println("noway!");
                 return "! Email already registered";  // On failure, send a message from here.
             }
-            String query = "insert into user (firstName, lastName, email, age, phoneNumber, city, password) values (?,?,?,?,?,?,?)"; //Insert user details into the table 'USERS'
+            query = "insert into user (firstName, lastName, email, age, phoneNumber, city, password) values (?,?,?,?,?,?,?)"; //Insert user details into the table 'USERS'
             preparedStatement = conn.prepareStatement(query); //Making use of prepared statements here to insert bunch of data
             preparedStatement.setString(1, firstName);
             preparedStatement.setString(2, lastName);
@@ -53,68 +52,17 @@ public class UserDAO {
         return "Oops.. Something went wrong there..!";  // On failure, send a message from here.
     }
 
-    public String authenticateUser(User user) {
-
-        String email = user.getEmail(); //Keeping user entered values in temporary variables.
-        String password = user.getPassword();
-
-        PreparedStatement preparedStatement= null;
-        ResultSet resultSet = null;
-
-        String query = "select * from user where email = ? and password = ?";
-
-        try (Connection conn =  ConnectionPool.getConnection()){
-            preparedStatement = conn.prepareStatement(query); //Statement is used to write queries. Read more about it.
-            preparedStatement.setString(1, email);
-            preparedStatement.setString(2, password);
-            resultSet = preparedStatement.executeQuery(); //Here table name is users and email,password are columns. fetching all the records and storing in a resultSet.
-
-            if (resultSet.next()) {
-                System.out.println(resultSet.getString("role"));
-                return "SUCCESS";
-            }
-
-        } catch (SQLException | NullPointerException e) {
-            e.printStackTrace();
-        } finally {
-            DBUtil.closeResultSet(resultSet);
-            DBUtil.closeStatement(preparedStatement);
-        }
-        return "! Invalid user credentials"; // Just returning appropriate message otherwise
-    }
-
-//    public Optional<User> loadByEmail(String email) throws DAOException {
-//        return Optional.ofNullable(databaseManager.executeQuery("SELECT * FROM users WHERE email=?",
-//                this::fetchUserFromResultSet,
-//                email));
-//    }
-//
-//    private User fetchUserFromResultSet(ResultSet resultSet) throws SQLException {
-//        if (resultSet.next()) {
-//            User user = new User();
-//            user.setId(resultSet.getLong("id"));
-//            user.setName(resultSet.getString("name"));
-//            user.setSurname(resultSet.getString("surname"));
-//            user.setEmail(resultSet.getString("email"));
-//            user.setPassword(resultSet.getString("password"));
-//            user.setAccountNumber(resultSet.getLong("account_number"));
-//            user.setRole(UserRole.valueOf(resultSet.getByte("role")));
-//            return user;
-//        } else {
-//            return null;
-//        }
-//    }
 
 
     public User getUserByEmailAndPassword(String email, String password) {
         User User = new User();
-        Statement st = null;
+        PreparedStatement preparedStatement = null;
         ResultSet rs = null;
         String query = "Select * from user where email = \"" + email + "\""
                 + " and password = \"" + password + "\"";
         try(Connection conn = ConnectionPool.getConnection()){
-            st = conn.createStatement();
-            rs = st.executeQuery(query);
+            preparedStatement = conn.prepareStatement(query);
+            rs = preparedStatement.executeQuery(query);
             if (rs.next()) {
                 User.setId(rs.getInt("id"));
                 User.setFirstName(rs.getString("firstName"));
@@ -132,7 +80,7 @@ public class UserDAO {
             e.printStackTrace();
         } finally {
             DBUtil.closeResultSet(rs);
-            DBUtil.closeStatement(st);
+            DBUtil.closeStatement(preparedStatement);
         }
 
         return User;

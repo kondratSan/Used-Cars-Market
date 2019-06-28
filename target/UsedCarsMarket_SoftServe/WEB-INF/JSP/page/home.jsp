@@ -210,12 +210,6 @@
                     </div>
                 </a>
             </div>
-            <div class="offset-5 col-3  viewAllUsersButtonDiv">
-                <button class="btn btn-danger" type="button" onclick="window.location.href = '/viewAllUsers'">
-                    View all users
-                </button>
-            </div>
-
         </div>
     </div>
 </div>

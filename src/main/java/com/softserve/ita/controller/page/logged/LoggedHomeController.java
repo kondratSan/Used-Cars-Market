@@ -1,4 +1,4 @@
-package com.softserve.ita.controller.page;
+package com.softserve.ita.controller.page.logged;
 
 import com.softserve.ita.controller.AbstractController;
 
@@ -8,11 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
-@WebServlet("/sellCar")
-public class SellCarController extends AbstractController {
+@WebServlet("/loggedHome")
+public class LoggedHomeController extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        forwardToPage("page/sellCar.jsp", req, resp);
+        forwardToPageLogged("page/home.jsp", req, resp);
     }
 }

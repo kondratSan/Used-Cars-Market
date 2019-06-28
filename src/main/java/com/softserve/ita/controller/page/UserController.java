@@ -13,6 +13,13 @@ import java.io.IOException;
 @WebServlet("/user")
 public class UserController extends AbstractController {
 
+    private UserDAO userDAO;
+
+    @Override
+    public void init() throws ServletException {
+        userDAO = new UserDAO();
+    }
+
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String firstName = request.getParameter("firstName");
@@ -24,7 +31,6 @@ public class UserController extends AbstractController {
         String password = request.getParameter("password");
 
 
-
         User user = new User();
         user.setFirstName(firstName);
         user.setLastName(lastName);
@@ -34,16 +40,13 @@ public class UserController extends AbstractController {
         user.setCity(city);
         user.setPassword(password);
 
-        UserDAO userDAO = new UserDAO();
+        userDAO = new UserDAO();
 
         String userRegistered = userDAO.addUser(user);
 
-        if(userRegistered.equals("SUCCESS"))
-        {
+        if (userRegistered.equals("SUCCESS")) {
             response.sendRedirect("/home");
-        }
-        else
-        {
+        } else {
             System.out.println(userRegistered);
             request.setAttribute("errMessage", userRegistered);
 
@@ -51,3 +54,4 @@ public class UserController extends AbstractController {
         }
     }
 }
+

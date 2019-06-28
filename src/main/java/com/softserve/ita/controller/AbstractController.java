@@ -18,4 +18,10 @@ public abstract class AbstractController extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/JSP/page-template.jsp").forward(req, resp);
     }
 
+    public final void forwardToPageLogged (String jspPage, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("currentPage", jspPage);
+        req.getRequestDispatcher("/WEB-INF/JSP/page-template-logged.jsp").forward(req, resp);
+    }
+
+
 }

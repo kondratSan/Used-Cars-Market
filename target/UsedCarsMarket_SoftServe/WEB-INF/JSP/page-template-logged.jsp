@@ -34,20 +34,15 @@
                 <div class="col-md-4 col-sm-6 login order-md-3">
                     <div class="row p-2">
                         <div class="col-12 d-flex justify-content-center justify-content-sm-end loginDivHome">
-                            <img src="/static/img/humanIcon.JPG" height="35">
-                            <a href="/login-register" class="loginHome mr-1"> &nbsp;&nbsp;&nbsp;Log&nbsp;in&nbsp;/&nbsp;Register&nbsp;&nbsp;</a>
-                            <%--<a href="/logout" class="loginHome">&nbsp;&nbsp;&nbsp;Log out&nbsp;&nbsp;&nbsp;</a>--%>
+                            <a href="/profile"><img src="/static/img/humanIcon.JPG" height="35"></a>
+                            <a href="/profile" class="loginHome mr-1"> &nbsp;&nbsp;&nbsp;My&nbsp;profile&nbsp;&nbsp;</a>
+                            <a href="/logout" class="loginHome">&nbsp;&nbsp;&nbsp;Log out&nbsp;&nbsp;&nbsp;</a>
                         </div>
                         <div class="col-12 p-2 d-flex justify-content-center justify-content-sm-end">
                             <button type="button" onclick="window.location.href = '/sellCar'"
                                     class="btn btn-info shadow">
                                 <b class="sell-button"><i class="fa fa-plus "></i> SELL A CAR</b>
                             </button>
-
-
-                            <%--LOG OUT BUTTON--%>
-
-
                         </div>
                     </div>
                 </div>

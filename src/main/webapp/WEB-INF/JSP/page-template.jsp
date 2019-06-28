@@ -36,7 +36,7 @@
                         <div class="col-12 d-flex justify-content-center justify-content-sm-end loginDivHome">
                             <img src="/static/img/humanIcon.JPG" height="35">
                             <a href="/login-register" class="loginHome mr-1"> &nbsp;&nbsp;&nbsp;Log&nbsp;in&nbsp;/&nbsp;Register&nbsp;&nbsp;</a>
-                            <a href="/logout" class="loginHome">&nbsp;&nbsp;&nbsp;Log out&nbsp;&nbsp;&nbsp;</a>
+                            <%--<a href="/logout" class="loginHome">&nbsp;&nbsp;&nbsp;Log out&nbsp;&nbsp;&nbsp;</a>--%>
                         </div>
                         <div class="col-12 p-2 d-flex justify-content-center justify-content-sm-end">
                             <button type="button" onclick="window.location.href = '/sellCar'"
