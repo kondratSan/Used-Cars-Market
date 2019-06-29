@@ -6,13 +6,14 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet("/viewAllUsers")
-public class ViewAllUsersController extends AbstractController {
+@WebServlet("/search")
+public class SearchController extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        forwardToPageLogged("page/viewAllUsers.jsp", req, resp);
+        forwardToPage("page/searchPage.jsp", req, resp);
     }
 }
