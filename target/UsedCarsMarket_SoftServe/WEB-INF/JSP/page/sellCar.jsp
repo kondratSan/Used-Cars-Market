@@ -11,203 +11,185 @@
     <div class="row" style="margin-bottom: 150px; margin-top: 70px">
         <div class="col-md-6 blank"></div>
         <div class="col-md-6 blank"></div>
-        <div class="row sellCarBody shadow-lg">
-            <div class="col-12 d-flex justify-content-center mt-3" >
-                <h1 id="sellCarTitle">Add&nbsp;information about&nbsp;the&nbsp;car</h1>
-            </div>
-            <div class="col-md-6 sellCarLeftSide p-5">
-                <div class="row">
-                    <div class="col-12 sellCarBigText">
-                        <span>General Information</span>
-                    </div>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Category</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Brand</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Model</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Year</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Fuel</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Engine Volume</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Engine Power</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Transmission</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Car Drive</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Kilometrage</span>
-                            </div>
-                            <div class="col-12 sellCarLeftSideTitle">
-                                <span>Color</span>
+        <form action="/sellCarSubmit" method="post" enctype="multipart/form-data">
+            <div class="row sellCarBody shadow-lg">
+                <div class="col-12 d-flex justify-content-center mt-3">
+                    <h1 id="sellCarTitle">Add&nbsp;information about&nbsp;the&nbsp;car</h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center errRegMessage">
+                    <%=(request.getAttribute("message") == null) ? "" : request.getAttribute("message")%>
+                </div>
+                <div class="col-md-6 sellCarLeftSide p-5">
+                    <div class="row">
+                        <div class="col-12 sellCarBigText">
+                            <span>General Information</span>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Category</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Brand</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Model</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Year</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Fuel</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Engine Volume</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Engine Power</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Transmission</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Car Drive</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Kilometrage</span>
+                                </div>
+                                <div class="col-12 sellCarLeftSideTitle">
+                                    <span>Color</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Category</option>
-                                        <option value="1">Category1</option>
-                                        <option value="2">Category2</option>
-                                        <option value="3">Category3</option>
-                                    </select>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <select name="category" class="browser-default custom-select" required>
+                                            <option value="" disabled selected>Category</option>
+                                            <option value="Sedan">Sedan</option>
+                                            <option value="SUV">SUV</option>
+                                            <option value="Minivan">Minivan</option>
+                                            <option value="Hatch Back">Hatch Back</option>
+                                            <option value="Sports Car">Sports Car</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Brand</option>
-                                        <option value="1">Brand1</option>
-                                        <option value="2">Brand2</option>
-                                        <option value="3">Brand3</option>
-                                    </select>
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <input type="text" name="brand" class="form-control" placeholder="Brand"
+                                               required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Model</option>
-                                        <option value="1">Model1</option>
-                                        <option value="2">Model2</option>
-                                        <option value="3">Model3</option>
-                                    </select>
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <input type="text" name="model" class="form-control" placeholder="Model"
+                                               required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <input type="number" class="form-control" placeholder="Year">
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <input type="number" name="year" class="form-control" placeholder="Year"
+                                               required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Fuel</option>
-                                        <option value="1">Category1</option>
-                                        <option value="2">Category2</option>
-                                        <option value="3">Category3</option>
-                                    </select>
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <select name="fuel" class="browser-default custom-select" required>
+                                            <option value="" disabled selected>Fuel</option>
+                                            <option value="Gasoline">Gasoline</option>
+                                            <option value="Diesel">Diesel</option>
+                                            <option value="Electric">Electric</option>
+                                            <option value="Hybrid">Hybrid</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <input type="number" class="form-control" placeholder="Volume">
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <input type="number" step="0.1" name="volume" class="form-control"
+                                               placeholder="Volume" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <input type="number" class="form-control" placeholder="Horse Power">
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <input type="number" name="power" class="form-control" placeholder="Horse Power"
+                                               required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Transmission</option>
-                                        <option value="1">Category1</option>
-                                        <option value="2">Category2</option>
-                                        <option value="3">Category3</option>
-                                    </select>
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <select name="transmission" class="browser-default custom-select" required>
+                                            <option value="" disabled selected>Transmission</option>
+                                            <option value="Manual">Manual</option>
+                                            <option value="Automatic">Automatic</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Car Drive</option>
-                                        <option value="1">Category1</option>
-                                        <option value="2">Category2</option>
-                                        <option value="3">Category3</option>
-                                    </select>
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <select name="carDrive" class="browser-default custom-select" required>
+                                            <option value="" disabled selected>Car Drive</option>
+                                            <option value="Front-Wheel Drive">Front-Wheel Drive</option>
+                                            <option value="Rear-Wheel Drive">Rear-Wheel Drive</option>
+                                            <option value="All-Wheel Drive">All-Wheel Drive</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <input type="number" class="form-control" placeholder="Km">
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <input type="number" name="kilometrage" class="form-control" placeholder="Km"
+                                               required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 sellCarLeftSideSelect">
-                                <div class="input-group form-group">
-                                    <select class="browser-default custom-select">
-                                        <option selected>Color</option>
-                                        <option value="1">Category1</option>
-                                        <option value="2">Category2</option>
-                                        <option value="3">Category3</option>
-                                    </select>
+                                <div class="col-12 sellCarLeftSideSelect">
+                                    <div class="input-group form-group">
+                                        <input type="text" name="color" class="form-control" placeholder="Color"
+                                               required>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 sellCarRightSide p-5">
-                <div class="sellCarBigText">
-                    <span>Add Photos</span>
+                <div class="col-md-6 sellCarRightSide p-5">
+                    <div class="sellCarBigText">
+                        <span>Add Photos</span>
+                    </div>
+                    <div class="input-group img-input">
+                        <input type="file" name="photo1" size="50" style="border: solid silver 1px;
+                         border-top-right-radius: 5px;
+                         border-bottom-right-radius: 5px;
+                         width: 100%;"/>
+                    </div>
+                    <div class="input-group img-input">
+                        <input type="file" name="photo2" size="50" style="border: solid silver 1px;
+                         border-top-right-radius: 5px;
+                         border-bottom-right-radius: 5px;
+                         width: 100%;"/>
+                    </div>
+                    <div class="input-group img-input">
+                        <input type="file" name="photo3" size="50" style="border: solid silver 1px;
+                         border-top-right-radius: 5px;
+                         border-bottom-right-radius: 5px;
+                         width: 100%;"/>
+                    </div>
+                    <div class="sellCarBigText">
+                        <span>Description</span>
+                    </div>
+                    <textarea class="form-control rounded-0 mb-4" id="description" rows="12" required></textarea>
+                    <input type="number" name="price" class="form-control" placeholder="Price, $"
+                           style="font-size: 25px; color: #3c9706 " required>
                 </div>
-                <div class="input-group img-input">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                    </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                               aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                    </div>
-                </div>
-                <div class="input-group img-input">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
-                    </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile02"
-                               aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                    </div>
-                </div>
-                <div class="input-group img-input">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupFileAddon03">Upload</span>
-                    </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile03"
-                               aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                    </div>
-                </div>
-                <div class="input-group img-input">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupFileAddon04">Upload</span>
-                    </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile04"
-                               aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                <div class="col-12 d-flex justify-content-center mb-4">
+                    <input type="submit" value="Submit"
+                           class="btn float-center carSellSubmitBtn">
+                    <div class="errRegMessage">
+                        <%=(request.getAttribute("message") == null) ? "" : request.getAttribute("message")%>
                     </div>
                 </div>
-                <div class="sellCarBigText">
-                    <span>Description</span>
-                </div>
-                <!--                <input class="form-control input-lg" id="description" type="text">-->
-                <textarea class="form-control rounded-0" id="description" rows="12"></textarea>
             </div>
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <input type="submit" value="Submit"
-                       class="btn float-center carSellSubmitBtn">
-            </div>
-        </div>
+        </form>
+
     </div>
 </div>

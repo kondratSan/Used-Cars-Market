@@ -14,7 +14,8 @@
     <div class="col-md-6 blank"></div>
     <div class="offset-4 col-4 pl-4 pt-2 my-5">
         <div class="row shadow rounded" id="carPageSellerDiv">
-            <div class="col-12 my-3 carPageSellerTitle">Your Profile</div>
+            <div class="col-12 mt-3 carPageSellerTitle">Your Profile</div>
+            <hr id="searchByCatLine" width="100%">
             <div class="col-12">
                 <div class="row">
                     <div class="col-5 pl-5">

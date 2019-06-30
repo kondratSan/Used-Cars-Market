@@ -40,16 +40,12 @@ public class UserController extends AbstractController {
         user.setCity(city);
         user.setPassword(password);
 
-        userDAO = new UserDAO();
-
         String userRegistered = userDAO.addUser(user);
 
         if (userRegistered.equals("SUCCESS")) {
             response.sendRedirect("/home");
         } else {
-            System.out.println(userRegistered);
             request.setAttribute("errMessage", userRegistered);
-
             forwardToPage("page/login-register.jsp", request, response);
         }
     }

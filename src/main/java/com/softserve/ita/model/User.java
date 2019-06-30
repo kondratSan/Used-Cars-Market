@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class User {
 
-    private int id;
+    private Integer id;
 
     private String firstName;
 
@@ -12,7 +12,7 @@ public class User {
 
     private String email;
 
-    private Integer age;
+    private int age;
 
     private String phoneNumber;
 
@@ -99,7 +99,7 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id && age == user.age && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(city, user.city) && Objects.equals(password, user.password) && Objects.equals(role, user.role);
+        return id.equals(user.id) && age == user.age && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(city, user.city) && Objects.equals(password, user.password) && Objects.equals(role, user.role);
     }
 
     @Override

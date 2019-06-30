@@ -1,10 +1,13 @@
 package com.softserve.ita.dao;
 
+import com.softserve.ita.exception.DAOException;
 import com.softserve.ita.model.User;
 import com.softserve.ita.util.ConnectionPool;
 import com.softserve.ita.util.DBUtil;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDAO {
 
@@ -18,10 +21,9 @@ public class UserDAO {
         String password = user.getPassword();
 
         PreparedStatement preparedStatement = null;
-        Statement st = null;
         ResultSet rs = null;
 
-        try ( Connection conn = ConnectionPool.getConnection()){
+        try (Connection conn = ConnectionPool.getConnection()) {
             String query = "Select * from user where email = \"" + email + "\"";
             preparedStatement = conn.prepareStatement(query);
             rs = preparedStatement.executeQuery();
@@ -47,32 +49,29 @@ public class UserDAO {
         } finally {
             DBUtil.closeResultSet(rs);
             DBUtil.closeStatement(preparedStatement);
-            DBUtil.closeStatement(st);
         }
         return "Oops.. Something went wrong there..!";  // On failure, send a message from here.
     }
 
 
-
     public User getUserByEmailAndPassword(String email, String password) {
-        User User = new User();
+        User user = new User();
         PreparedStatement preparedStatement = null;
         ResultSet rs = null;
-        String query = "Select * from user where email = \"" + email + "\""
-                + " and password = \"" + password + "\"";
-        try(Connection conn = ConnectionPool.getConnection()){
+        String query = "Select * from user where email = \"" + email + "\"" + " and password = \"" + password + "\"";
+        try (Connection conn = ConnectionPool.getConnection()) {
             preparedStatement = conn.prepareStatement(query);
             rs = preparedStatement.executeQuery(query);
             if (rs.next()) {
-                User.setId(rs.getInt("id"));
-                User.setFirstName(rs.getString("firstName"));
-                User.setLastName(rs.getString("lastName"));
-                User.setEmail(rs.getString("email"));
-                User.setAge(rs.getShort("age"));
-                User.setPhoneNumber(rs.getString("phoneNumber"));
-                User.setCity(rs.getString("city"));
-                User.setPassword(rs.getString("password"));
-                User.setRole(rs.getString("role"));
+                user.setId(rs.getInt("id"));
+                user.setFirstName(rs.getString("firstName"));
+                user.setLastName(rs.getString("lastName"));
+                user.setEmail(rs.getString("email"));
+                user.setAge(rs.getShort("age"));
+                user.setPhoneNumber(rs.getString("phoneNumber"));
+                user.setCity(rs.getString("city"));
+                user.setPassword(rs.getString("password"));
+                user.setRole(rs.getString("role"));
             } else {
                 return null;
             }
@@ -83,7 +82,46 @@ public class UserDAO {
             DBUtil.closeStatement(preparedStatement);
         }
 
-        return User;
+        return user;
+    }
+
+    public List<User> selectAll() throws DAOException {
+        List<User> users = new ArrayList<>();
+
+        User user;
+
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+
+        String query = "SELECT * from user";
+
+        try (Connection conn = ConnectionPool.getConnection()) {
+
+            stmt = conn.prepareStatement(query);
+            rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                user = new User();
+                user.setId(rs.getInt("id"));
+                user.setFirstName(rs.getString("firstName"));
+                user.setLastName(rs.getString("lastName"));
+                user.setEmail(rs.getString("email"));
+                user.setAge(rs.getShort("age"));
+                user.setPhoneNumber(rs.getString("phoneNumber"));
+                user.setCity(rs.getString("city"));
+                user.setPassword(rs.getString("password"));
+                user.setRole(rs.getString("role"));
+                users.add(user);
+            }
+
+            return users;
+        } catch (SQLException e) {
+            throw new DAOException(e.getMessage(), e);
+        } finally {
+            DBUtil.closeResultSet(rs);
+            DBUtil.closeStatement(stmt);
+        }
+
     }
 
 

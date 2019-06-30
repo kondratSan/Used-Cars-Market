@@ -23,15 +23,6 @@ public class AuthorizedUserFilter extends HttpFilter {
             chain.doFilter(req, res);
         } else {
             res.sendRedirect("/loggedHome");
-//            User user = (User) session.getAttribute("user");
-//            switch (user.getRole()) {
-//                case "user":
-//                    res.sendRedirect("/loggedHome");
-//                    break;
-//                case "admin":
-//                    res.sendRedirect("/car");
-//                    break;
-//            }
         }
     }
 }

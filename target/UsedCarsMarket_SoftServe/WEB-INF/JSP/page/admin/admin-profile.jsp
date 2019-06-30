@@ -42,7 +42,7 @@
     <div class="offset-1 col-12 col-md-2 my-5 d-flex justify-content-center">
         <div class="row">
             <div class="col-12" ></div>
-            <button class="btn btn-danger" type="button" onclick="window.location.href = '/viewAllUsers'" style="height: 50px;">
+            <button class="btn btn-danger" type="button" onclick="window.location.href = '/user-list'" style="height: 50px;">
                 View all users
             </button>
         </div>

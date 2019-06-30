@@ -39,7 +39,7 @@
                             <%--<a href="/logout" class="loginHome">&nbsp;&nbsp;&nbsp;Log out&nbsp;&nbsp;&nbsp;</a>--%>
                         </div>
                         <div class="col-12 p-2 d-flex justify-content-center justify-content-sm-end">
-                            <button type="button" onclick="window.location.href = '/sellCar'"
+                            <button type="button" onclick="window.location.href = '/loggedSellCar'"
                                     class="btn btn-info shadow">
                                 <b class="sell-button"><i class="fa fa-plus "></i> SELL A CAR</b>
                             </button>

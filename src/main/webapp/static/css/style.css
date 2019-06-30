@@ -1,17 +1,16 @@
 
-
-.blank{
+.blank {
     height: 110px;
 }
 
-.top-bar{
+.top-bar {
     border-bottom: silver 1px solid;
     background-color: #f2f3f4;
     /*background-color: black;*/
 
 }
 
-.loginHome{
+.loginHome {
     background-color: black;
     color: white;
     text-decoration: none;
@@ -19,12 +18,12 @@
     border-radius: 10px;
 }
 
-.loginDivHome a:hover{
+.loginDivHome a:hover {
     text-decoration: none;
     color: white;
 }
 
-.logo-img-div{
+.logo-img-div {
     border-radius: 50%;
     /*border: black solid 2px;*/
 }
@@ -33,7 +32,7 @@
 /*    white-space: nowrap;*/
 /*}*/
 
-.btn-info{
+.btn-info {
     background-color: #a3f7df;
     color: black;
     font-size: 18px;
@@ -41,12 +40,12 @@
     border: #9df0d8 1px solid;
 }
 
-.slogan, .logo{
+.slogan, .logo {
     margin-bottom: auto;
     margin-top: auto;
 }
 
-.search{
+.search {
     background-color: #a3f7df;
     border: black 1px solid;
     border-radius: 0px 25px 0px 0px;
@@ -54,34 +53,33 @@
     padding-bottom: 20px;
 }
 
-.il{
+.il {
     height: 100%;
     background-color: yellow;
 }
 
-.dropdown{
+.dropdown {
     padding: 15px;
 }
 
-.select{
+.select {
     padding: 15px;
     width: 100%;
 }
 
-.dropdown-toggle{
+.dropdown-toggle {
     background-color: #2f6bc2;
     color: white;
     width: 100%;
 }
 
-
-.year{
+.year {
     text-align: center;
     margin-bottom: 45px;
     margin-top: 20px;
 }
 
-.rightdrop{
+.rightdrop {
     padding-right: 20px;
     padding-left: 0px;
     margin-top: 15px;
@@ -89,11 +87,11 @@
     /*width: 100%;*/
 }
 
-.dropdown-right{
+.dropdown-right {
     margin-bottom: 30px;
 }
 
-.priceSelect{
+.priceSelect {
     font-size: 14px;
 }
 
@@ -105,65 +103,63 @@
     width: 40%;
 }
 
-.unstyle{
+.unstyle {
     list-style-type: none;
     margin-top: 10px;
 }
 
-.car-view a:hover{
+.car-view a:hover {
     text-decoration: none;
     color: black;
 }
 
-.carTitle-home{
+.carTitle-home {
     font-size: 16px;
     color: #2f6bc2;
 }
 
-.carPrice-home{
+.carPrice-home {
     font-size: 20px;
-    color: #3c9706 ;
+    color: #3c9706;
 }
 
-.img-crop{
+.img-crop {
     /*height: 240px;*/
     overflow: hidden;
 }
 
-.searchByCat{
+.searchByCat {
     color: silver;
 }
 
-#searchByCatLine{
+#searchByCatLine {
     border: none;
     height: 3px;
     background-color: silver;
 }
 
-
-.carCatIconHome{
+.carCatIconHome {
     text-align: center;
     font-size: 16px;
 }
 
-.carCatTitle-div{
+.carCatTitle-div {
     height: 35px;
 }
 
-.carCatTitle-home{
+.carCatTitle-home {
     color: black;
 }
 
-.carCatIconHome a:hover{
+.carCatIconHome a:hover {
     text-decoration: none;
     transition: font-size 0.3s;
     font-size: 20px;
 }
 
-footer{
+footer {
     border-top: silver 1px solid;
 }
-
 
 .fafooter {
     color: black;
@@ -176,17 +172,16 @@ footer{
     transform: rotate(180deg);
 }
 
-body{
-    font-family: Arial,Helvetica,sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
-footer{
+
+footer {
     font-family: 'Viga', sans-serif;
     background-color: #dbdcdd;
 }
 
-
-
-.regForm{
+.regForm {
     /*background-color: #a3f7df;*/
 }
 
@@ -194,14 +189,11 @@ footer{
     white-space: nowrap;
 }
 
-.loginHome{
+.loginHome {
     white-space: nowrap;
 }
 
-
-
-
-.card{
+.card {
     /*height: 370px;*/
     margin-top: auto;
     margin-bottom: auto;
@@ -211,38 +203,36 @@ footer{
     /*background-color: rgba(0,0,0,0.5) !important;*/
 }
 
-
-.card-header, .card-footer{
+.card-header, .card-footer {
     text-align: start;
     color: black;
     background-color: #a3f7df;
     white-space: nowrap;
 }
 
-.card-footer{
+.card-footer {
     height: 33px;
 }
 
-
-.prepend-login span{
+.prepend-login span {
     width: 50px;
     background-color: #a3f7df;
     color: black;
-    border:0 !important;
+    border: 0 !important;
 }
 
-.login_btn, .reg_btn{
+.login_btn, .reg_btn {
     color: black;
     background-color: #a3f7df;
     width: 100px;
 }
 
-.login_btn:hover, .reg_btn:hover, .carSellSubmitBtn:hover{
+.login_btn:hover, .reg_btn:hover, .carSellSubmitBtn:hover {
     color: #a3f7df;
     background-color: black;
 }
 
-.card-container{
+.card-container {
     margin-top: 100px;
     width: 350px;
 }
@@ -265,153 +255,152 @@ footer{
     border-radius: 50%;
 }
 
-.SignInText{
+.SignInText {
     margin-right: 180px;
 }
 
-.sellCarLeftSideTitle{
-    margin-bottom: 1.35rem;
+.sellCarLeftSideTitle {
+    margin-bottom: 1.26rem;
     margin-top: 0.6rem;
 }
 
-.img-input{
+.img-input {
     padding-bottom: 15px;
+
 }
 
-#sellCarTitle{
+#sellCarTitle {
     font-weight: 700;
 }
 
-#choosePhotos{
+#choosePhotos {
     margin-top: 5px;
     margin-bottom: 25px;
 }
 
-.sellCarBigText{
+.sellCarBigText {
     font-size: 30px;
     text-align: center;
     margin-bottom: 15px;
 }
 
-#description{
+#description {
     /*height: 300px*/
 }
 
-.sellCarBody{
+.sellCarBody {
     border: silver 1px solid;
     margin-top: 20px;
     border-radius: 20px;
 }
 
-.carSellSubmitBtn{
+.carSellSubmitBtn {
     color: black;
     background-color: #a3f7df;
     font-size: 30px;
     width: 200px;
 }
 
-.CarSearchImgDiv{
+.CarSearchImgDiv {
     height: 200px;
 }
 
-.viewAllUsersHumanImg{
+.viewAllUsersHumanImg {
     width: 100%;
 }
 
-.CarSearchImg{
+.CarSearchImg {
     height: 100%;
 }
 
-.searchCarLine{
+.searchCarLine {
     border: none;
     height: 2px;
     background-color: silver;
 }
 
-
-.carSearchTitle{
+.carSearchTitle {
     font-size: 16px;
     color: #2f6bc2;
 }
 
-.carSearchPrice{
+.carSearchPrice {
     font-size: 20px;
-    color: #3c9706 ;
+    color: #3c9706;
 }
 
-.carSearchDesc{
+.carSearchDesc {
     height: 50px;
     width: 60%;
     overflow: hidden;
 }
 
-
-.carPageimgDiv{
+.carPageimgDiv {
     height: 500px;
     overflow: hidden;
 }
 
-.carPagePrice{
+.carPagePrice {
     color: #3c9706;
     text-align: end;
 }
 
-.carPageLine{
+.carPageLine {
     border: none;
     height: 2px;
     background-color: black;
 }
 
-.carPageTitle, .carPagePrice{
+.carPageTitle, .carPagePrice {
     margin: -10px;
 }
 
-#carPageSellerDiv{
+#carPageSellerDiv {
     background-color: #b8efe6;
     width: 110%;
     overflow: hidden;
 }
 
-.carPageSellerTitle{
+.carPageSellerTitle {
     text-align: center;
     font-size: 19px;
 }
 
-#sellerIcon{
+#sellerIcon {
     width: 30px;
 }
 
-.carSellSellerDivRightSide{
+.carSellSellerDivRightSide {
     color: #9b9b9b;
 }
 
-.carSellDescription{
+.carSellDescription {
     /*height: 100px;*/
     /*width: 100%;*/
     overflow: hidden;
 }
 
-.carSellCarInfo{
+.carSellCarInfo {
     background-color: #fcfcfc;
     width: 110%;
 }
 
-.carPageInfoLine{
+.carPageInfoLine {
     border: none;
     height: 1px;
     background-color: silver;
 }
 
-.errRegMessage{
+.errRegMessage {
     color: red;
     /*text-shadow: 2px 2px 1px black;*/
     margin-bottom: 10px;
 }
 
 /*.viewUserCard{*/
-    /*height: 100%;*/
+/*height: 100%;*/
 /*}*/
 
-.viewAllUsersLeftText{
+.viewAllUsersLeftText {
     color: #9b9b9b;
 }

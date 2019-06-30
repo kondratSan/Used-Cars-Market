@@ -12,28 +12,21 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/profile", "/admin-profile"})
-public class AdminFProfileFilter extends HttpFilter {
+@WebFilter(urlPatterns = {"/profile"})
+public class ProfileFilter extends HttpFilter {
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         HttpSession session = req.getSession(true);
         User user = (User) session.getAttribute("user");
 
-        switch (user.getRole()) {
-            case ("admin"):
-                res.sendRedirect("/admin-profile");
-                break;
-            case ("user"):
-                res.sendRedirect("/profile");
-                break;
-            default:
-                res.sendRedirect("/login-register");
+        if(session.getAttribute("user") == null){
+            res.sendRedirect("/login-register");
+        } else if(user.getRole().equals("user")){
+            chain.doFilter(req, res);
+        } else if(user.getRole().equals("admin")){
+            res.sendRedirect("/admin-profile");
         }
-//        if (!user.getRole().equals("admin")) {
-//            res.sendRedirect("/profile");
-//        } else {
-//            res.sendRedirect("/admin-profile");
-//        }
+
     }
 }
