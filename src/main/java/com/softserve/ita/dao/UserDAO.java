@@ -124,5 +124,35 @@ public class UserDAO {
 
     }
 
+    public User getUserById(Integer id) {
+        User user = new User();
+        PreparedStatement preparedStatement = null;
+        ResultSet rs = null;
+        String query = "Select * from user where id = " + id ;
+        try (Connection conn = ConnectionPool.getConnection()) {
+            preparedStatement = conn.prepareStatement(query);
+            rs = preparedStatement.executeQuery(query);
+            if (!rs.next()) {
+                return null;
+            } else {
+                user.setId(rs.getInt("id"));
+                user.setLastName(rs.getString("lastName"));
+                user.setFirstName(rs.getString("firstName"));
+                user.setEmail(rs.getString("email"));
+                user.setAge(rs.getShort("age"));
+                user.setPhoneNumber(rs.getString("phoneNumber"));
+                user.setCity(rs.getString("city"));
+                user.setPassword(rs.getString("password"));
+                user.setRole(rs.getString("role"));            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.closeResultSet(rs);
+            DBUtil.closeStatement(preparedStatement);
+        }
+
+        return user;
+    }
+
 
 }

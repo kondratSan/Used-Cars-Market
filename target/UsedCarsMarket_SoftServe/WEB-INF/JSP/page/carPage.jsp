@@ -63,13 +63,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="../../../static/img/car.jpg" alt="First slide">
+                            <img class="d-block w-100" src="data:image/jpg;base64,${car.photo1out}" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../../../static/img/car2.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="data:image/jpg;base64,${car.photo2out}" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../../../static/img/car3.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="data:image/jpg;base64,${car.photo3out}" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,7 +102,7 @@
                     <span>Car Drive</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Category</span><br>
+                    <span>Color</span><br>
                     <hr class="carPageInfoLine">
                     <br>
                     <span>Kilometrage</span><br>
@@ -111,28 +111,28 @@
                 </b>
                 </div>
                 <div class="col-8">
-                    <span>Category</span><br>
+                    <span>${car.category}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Year</span><br>
+                    <span>${car.carYear}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Fuel</span><br>
+                    <span>${car.fuel}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Engine</span><br>
+                    <span>${car.engineVolume}L ${car.enginePower} h.p.</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Transmission</span><br>
+                    <span>${car.transmission}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Car Drive</span><br>
+                    <span>${car.carDrive}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Category</span><br>
+                    <span>${car.color}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>Kilometrage</span><br>
+                    <span>${car.kilometrage}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
                 </div>

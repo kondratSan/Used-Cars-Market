@@ -113,3 +113,7 @@
         </div>
     </div>
 </div>
+
+<form action="/test">
+    <input type="submit" value="submit">
+</form>

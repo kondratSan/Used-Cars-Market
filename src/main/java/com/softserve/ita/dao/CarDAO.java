@@ -5,9 +5,11 @@ import com.softserve.ita.model.User;
 import com.softserve.ita.util.ConnectionPool;
 import com.softserve.ita.util.DBUtil;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
+import java.util.Base64;
 
 public class CarDAO {
 
@@ -85,5 +87,118 @@ public class CarDAO {
         }
 
         return 0;
+    }
+
+    public Car getCarById(Integer id){
+        Car car = null;
+
+        PreparedStatement statement = null;
+
+        ResultSet result = null;
+
+        String sql = "SELECT * FROM car WHERE id = ?";
+
+
+
+        try (Connection connection = ConnectionPool.getConnection()) {
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1, id);
+            result = statement.executeQuery();
+
+            if (result.next()) {
+                car = new Car();
+                String category = result.getString("category");
+                String brand = result.getString("brand");
+                String model = result.getString("model");
+                int year = result.getInt("carYear");
+                String fuel = result.getString("fuel");
+                double volume = result.getDouble("engineVolume");
+                int power = result.getInt("power");
+                String transmission = result.getString("transmission");
+                String carDrive = result.getString("carDrive");
+                int kilometrage = result.getInt("kilometrage");
+                String color = result.getString("color");
+                Blob blob1 = result.getBlob("photo1");
+                Blob blob2 = result.getBlob("photo2");
+                Blob blob3 = result.getBlob("photo3");
+
+
+                //////////1
+                InputStream inputStream1 = blob1.getBinaryStream();
+                ByteArrayOutputStream outputStream1 = new ByteArrayOutputStream();
+                byte[] buffer1 = new byte[4096];
+                int bytesRead1 = -1;
+
+                while ((bytesRead1 = inputStream1.read(buffer1)) != -1) {
+                    outputStream1.write(buffer1, 0, bytesRead1);
+                }
+
+                byte[] imageBytes1 = outputStream1.toByteArray();
+                String base64Image1 = Base64.getEncoder().encodeToString(imageBytes1);
+
+                inputStream1.close();
+                outputStream1.close();
+
+                car.setPhoto1out(base64Image1);
+
+                //////////2
+                InputStream inputStream2 = blob2.getBinaryStream();
+                ByteArrayOutputStream outputStream2 = new ByteArrayOutputStream();
+                byte[] buffer2 = new byte[4096];
+                int bytesRead2 = -1;
+
+                while ((bytesRead2 = inputStream2.read(buffer2)) != -1) {
+                    outputStream2.write(buffer2, 0, bytesRead2);
+                }
+
+                byte[] imageBytes2 = outputStream2.toByteArray();
+                String base64Image2 = Base64.getEncoder().encodeToString(imageBytes2);
+
+                inputStream2.close();
+                outputStream2.close();
+
+                car.setPhoto2out(base64Image2);
+
+                //////////3
+                InputStream inputStream3 = blob3.getBinaryStream();
+                ByteArrayOutputStream outputStream3 = new ByteArrayOutputStream();
+                byte[] buffer3 = new byte[4096];
+                int bytesRead3 = -1;
+
+                while ((bytesRead3 = inputStream3.read(buffer3)) != -1) {
+                    outputStream3.write(buffer3, 0, bytesRead3);
+                }
+
+                byte[] imageBytes3 = outputStream3.toByteArray();
+                String base64Image3 = Base64.getEncoder().encodeToString(imageBytes3);
+
+                inputStream3.close();
+                outputStream3.close();
+
+                car.setPhoto3out(base64Image3);
+
+                car.setCategory(category);
+                car.setBrand(brand);
+                car.setModel(model);
+                car.setCarYear(year);
+                car.setFuel(fuel);
+                car.setEngineVolume(volume);
+                car.setEnginePower(power);
+                car.setTransmission(transmission);
+                car.setCarDrive(carDrive);
+                car.setKilometrage(kilometrage);
+                car.setColor(color);
+
+
+
+            }
+
+        } catch (SQLException | IOException ex) {
+            ex.printStackTrace();
+        }
+
+        return car;
+
+
     }
 }

@@ -35,6 +35,36 @@ public class Car {
 
     private InputStream photo3;
 
+    private String photo1out;
+
+    private String photo2out;
+
+    private String photo3out;
+
+    public String getPhoto1out() {
+        return photo1out;
+    }
+
+    public void setPhoto1out(String photo1out) {
+        this.photo1out = photo1out;
+    }
+
+    public String getPhoto2out() {
+        return photo2out;
+    }
+
+    public void setPhoto2out(String photo2out) {
+        this.photo2out = photo2out;
+    }
+
+    public String getPhoto3out() {
+        return photo3out;
+    }
+
+    public void setPhoto3out(String photo3out) {
+        this.photo3out = photo3out;
+    }
+
     public int getEnginePower() {
         return enginePower;
     }

@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Oleksandr
@@ -7,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 
 <div class="container mt-5">
     <div class="row">
@@ -96,26 +97,31 @@
     </div>
 </div>
 
-<h1>You are:  <% out.print(session.getAttribute("role") + " ");  out.print(session.getAttribute("email"));%></h1>
+<h1>You are:  <% out.print(session.getAttribute("role") + " ");
+    out.print(session.getAttribute("email"));%></h1>
 
 
 <div class="container cars-home pt-1">
     <div class="row mt-5">
 
         <div class="col-md-4 col-6 car-view">
-            <a href="/car">
-                <div class="img-crop ">
-                    <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
-                </div>
-                <ul class="unstyle">
-                    <li>
-                        <span class="carTitle-home"> Hyundai Santa Fe 2019 </span>
-                    </li>
-                    <li>
-                        <span class="carPrice-home"><b>29&nbsp;700 $</b></span>
-                    </li>
-                </ul>
-            </a>
+            <form action="/car" id="my_form">
+                <%--<a href="javascript:{}" onclick="document.getElementById('my_form').submit(); return false;">--%>
+                <a href="javascript:{}" onclick="document.form.submit(); return false;">
+                    <input type="hidden" name="car_id" value="2">
+                    <div class="img-crop ">
+                        <img src="../../../static/img/car.jpg" alt="" class="car-img img-fluid">
+                    </div>
+                    <ul class="unstyle">
+                        <li>
+                            <span class="carTitle-home"> Hyundai Santa Fe 2019 </span>
+                        </li>
+                        <li>
+                            <span class="carPrice-home"><b>29&nbsp;700 $</b></span>
+                        </li>
+                    </ul>
+                </a>
+            </form>
         </div>
         <div class="col-md-4 col-6 car-view">
             <a href="/car">
@@ -152,7 +158,6 @@
 </div>
 
 <%--<h1>Welcome ${email}</h1>--%>
-
 
 
 <div class="container searchByCat  mt-3 mb-5">
@@ -213,3 +218,5 @@
         </div>
     </div>
 </div>
+
+<img src="data:image/jpg;base64,${car.photo}" width="240" height="300"/>
