@@ -19,6 +19,10 @@
                 <div class="col-12 d-flex justify-content-center errRegMessage">
                     <%=(request.getAttribute("message") == null) ? "" : request.getAttribute("message")%>
                 </div>
+                <div class="col-12 d-flex justify-content-center errRegMessage" style="margin-left: 30px; padding-right: 75px; margin-bottom: 0px;">
+                    <input type="text" name="title" class="form-control" placeholder="Title"
+                           style="font-size: 25px"  required>
+                </div>
                 <div class="col-md-6 sellCarLeftSide p-5">
                     <div class="row">
                         <div class="col-12 sellCarBigText">
@@ -177,7 +181,7 @@
                     <div class="sellCarBigText">
                         <span>Description</span>
                     </div>
-                    <textarea class="form-control rounded-0 mb-4" id="description" rows="12" required></textarea>
+                    <textarea class="form-control rounded-0 mb-4" name="description" id="description" rows="12" required></textarea>
                     <input type="number" name="price" class="form-control" placeholder="Price, $"
                            style="font-size: 25px; color: #3c9706 " required>
                 </div>

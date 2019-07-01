@@ -42,6 +42,7 @@ public class LoginController extends AbstractController {
             session.setAttribute("role", user.getRole());
             session.setAttribute("user", user);
             session.setAttribute("email", user.getEmail());
+            session.setAttribute("id", user.getId());
             response.sendRedirect("/loggedHome");
         } catch (DAOException e) {
             e.printStackTrace();

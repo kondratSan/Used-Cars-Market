@@ -1,8 +1,10 @@
 package com.softserve.ita.controller.page.logged;
 
 import com.softserve.ita.controller.AbstractController;
+import com.softserve.ita.dao.AdvertisementDAO;
 import com.softserve.ita.dao.CarDAO;
 import com.softserve.ita.dao.UserDAO;
+import com.softserve.ita.model.Advertisement;
 import com.softserve.ita.model.Car;
 
 import javax.servlet.ServletException;
@@ -22,24 +24,25 @@ public class SubmitSellCarController extends AbstractController {
 
 
     private CarDAO carDAO;
+    private AdvertisementDAO adDAO;
 
     @Override
     public void init() throws ServletException {
+        adDAO = new AdvertisementDAO();
         carDAO = new CarDAO();
     }
 
 
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String message = null;
+        HttpSession session = request.getSession();
 
 
         String category = request.getParameter("category");
         String brand = request.getParameter("brand");
         String model = request.getParameter("model");
         int year = Integer.parseInt(request.getParameter("year"));
-        String fuel= request.getParameter("fuel");
+        String fuel = request.getParameter("fuel");
         double volume = Double.parseDouble(request.getParameter("volume"));
         int power = Integer.parseInt(request.getParameter("power"));
         String transmission = request.getParameter("transmission");
@@ -77,10 +80,25 @@ public class SubmitSellCarController extends AbstractController {
         car.setPhoto2(inputStream2);
         car.setPhoto3(inputStream3);
 
+        Integer car_id = null;
+        String description = request.getParameter("description");
+        Integer price = Integer.parseInt(request.getParameter("price"));
+        String title = request.getParameter("title");
+        Integer user_id = (Integer) session.getAttribute("id");
 
-        if (carDAO.addCar(car)) {
-            request.setAttribute("message", "Your car has been successfully added!");
-            forwardToPageLogged("page/sellCar.jsp", request, response);
+        car_id = carDAO.addCar(car);
+        if (car_id != 0) {
+
+            Advertisement ad = new Advertisement();
+            ad.setCar_id(car_id);
+            ad.setDescription(description);
+            ad.setTitle(title);
+            ad.setPrice(price);
+            ad.setUser_id(user_id);
+            if (adDAO.addAdvertisement(ad)) {
+                request.setAttribute("message", "Your car has been successfully added!");
+                forwardToPageLogged("page/sellCar.jsp", request, response);
+            }
         } else {
             request.setAttribute("message", "There was a problem with adding your car!");
             forwardToPageLogged("page/sellCar.jsp", request, response);
