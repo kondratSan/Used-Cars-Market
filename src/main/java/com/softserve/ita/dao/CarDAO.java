@@ -1,5 +1,6 @@
 package com.softserve.ita.dao;
 
+import com.softserve.ita.exception.DAOException;
 import com.softserve.ita.model.Car;
 import com.softserve.ita.model.User;
 import com.softserve.ita.util.ConnectionPool;
@@ -89,7 +90,7 @@ public class CarDAO {
         return 0;
     }
 
-    public Car getCarById(Integer id){
+    public Car getCarById(Integer id) {
         Car car = null;
 
         PreparedStatement statement = null;
@@ -97,7 +98,6 @@ public class CarDAO {
         ResultSet result = null;
 
         String sql = "SELECT * FROM car WHERE id = ?";
-
 
 
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -190,7 +190,6 @@ public class CarDAO {
                 car.setColor(color);
 
 
-
             }
 
         } catch (SQLException | IOException ex) {
@@ -198,7 +197,32 @@ public class CarDAO {
         }
 
         return car;
-
-
     }
+
+    public boolean deleteCarById(Integer id) throws DAOException {
+        PreparedStatement statement = null;
+
+        ResultSet rs = null;
+
+
+        try (Connection conn = ConnectionPool.getConnection()) {
+            String query = "delete from car where id = " + id;
+
+            statement = conn.prepareStatement(query);
+
+            int check = statement.executeUpdate();
+
+            if (check != 1) return true;
+
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        } finally {
+            DBUtil.closeStatement(statement);
+        }
+
+        return false;
+    }
+
+
 }

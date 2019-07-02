@@ -72,7 +72,7 @@
                             <a href="javascript:{}"
                                onclick="document.getElementById('${ad.id}').submit(); return false;">
                                 <span class="carSearchTitle"
-                                      style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden">${ad.title}title</span>
+                                      style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden">${ad.title}</span>
                                 <br>
                             </a>
                             <span class="carSearchPrice"><b>${ad.price} $</b></span> <br>

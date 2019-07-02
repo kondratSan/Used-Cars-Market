@@ -15,17 +15,12 @@
     </div>
 </div>
 
-
-<%--<c:url var="deleteLink" value="doctor">--%>
-<%--<c:param name="command" value="DELETE"/>--%>
-<%--<c:param name="docId" value="${tmpDoctor.accountId}"/>--%>
-<%--</c:url>--%>
-
-
-
+<div class="errRegMessage m-3" style="width: 100%; text-align: center">
+    <%=(request.getAttribute("deleteMessage") == null) ? "" : request.getAttribute("deleteMessage")%>
+</div>
 
 <div class="container">
-    <c:forEach var="user"  items="${userList}">
+    <c:forEach var="user" items="${userList}">
         <div class="row">
             <div class="col-12 mt-3">
                 <div class="row shadow viewUserCard p-5">
@@ -51,10 +46,12 @@
                         </div>
                     </div>
                     <div class="col-2">
-                        <button class="btn btn-danger btn-lg" type="button"
-                                onclick="window.location.href = '#'">
-                            Block
-                        </button>
+                        <form action="/user" method="get">
+                            <input type="hidden" name="user_id" value="${user.id}">
+                            <button class="btn btn-danger btn-lg" type="submit">
+                                Ban
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

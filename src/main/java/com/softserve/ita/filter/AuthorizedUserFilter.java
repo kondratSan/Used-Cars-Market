@@ -1,7 +1,6 @@
 package com.softserve.ita.filter;
 
 
-import com.softserve.ita.model.User;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

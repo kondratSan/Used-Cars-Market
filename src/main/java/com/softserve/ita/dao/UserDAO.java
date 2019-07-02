@@ -154,5 +154,35 @@ public class UserDAO {
         return user;
     }
 
+    public String deleteUserById(Integer id) throws DAOException {
+        PreparedStatement preparedStatement = null;
+        ResultSet rs = null;
+        String query = "Delete from user where id = " + id;
+        AdvertisementDAO adDAO = new AdvertisementDAO();
+        CarDAO carDAO = new CarDAO();
+        List<Integer> car_ids = adDAO.selectAllCarIdsByUserId(id);
+        for (Integer car_id : car_ids) {
+            carDAO.deleteCarById(car_id);
+        }
+
+        try (Connection conn = ConnectionPool.getConnection()) {
+
+            preparedStatement = conn.prepareStatement(query);
+
+            int check = preparedStatement.executeUpdate();
+
+            if (check != 0)
+                return "User Has been successfully deleted!";
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.closeResultSet(rs);
+            DBUtil.closeStatement(preparedStatement);
+        }
+
+        return "There was an error with deleting user!";
+    }
+
 
 }

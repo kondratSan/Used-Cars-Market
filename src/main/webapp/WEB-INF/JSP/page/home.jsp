@@ -89,13 +89,10 @@
     </div>
 </div>
 
-<%--<h1>You are:  <% out.print(session.getAttribute("role") + " ");--%>
-<%--out.print(session.getAttribute("email"));%></h1>--%>
-
 
 <div class="container cars-home pt-1">
     <div class="row mt-5">
-        <c:forEach var="ad" items="${adList}" begin="0" end="3">
+        <c:forEach var="ad" items="${adList}" begin="0" end="2">
 
             <div class="col-md-4 col-6 car-view">
                 <form action="/car" id="${ad.id}">

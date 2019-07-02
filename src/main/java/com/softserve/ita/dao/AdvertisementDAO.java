@@ -146,9 +146,7 @@ public class AdvertisementDAO {
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
-        String query = "SELECT * from advertisement join car where (car.category = ? or ? = 1) and " +
-                "(car.brand = ? or ? = 1) and (car.model = ? or ? = 1) and ((car.carYear between ? and ?) or ? = 1) " +
-                "and ((advertisement.carPrice between ? and ?) or ? = 1) and(advertisement.car_id = car.id)";
+        String query = "SELECT * from advertisement join car where (car.category = ? or ? = 1) and " + "(car.brand = ? or ? = 1) and (car.model = ? or ? = 1) and ((car.carYear between ? and ?) or ? = 1) " + "and ((advertisement.carPrice between ? and ?) or ? = 1) and(advertisement.car_id = car.id)";
 
         try (Connection conn = ConnectionPool.getConnection()) {
 
@@ -156,40 +154,30 @@ public class AdvertisementDAO {
 
             stmt.setString(1, category);
 
-            if(category.equals(""))
-                stmt.setInt(2, 1);
-            else
-                stmt.setInt(2, 0);
+            if (category.equals("")) stmt.setInt(2, 1);
+            else stmt.setInt(2, 0);
 
             stmt.setString(3, brand);
 
-            if(brand.equals(""))
-                stmt.setInt(4, 1);
-            else
-                stmt.setInt(4, 0);
+            if (brand.equals("")) stmt.setInt(4, 1);
+            else stmt.setInt(4, 0);
 
             stmt.setString(5, model);
 
-            if(model.equals(""))
-                stmt.setInt(6, 1);
-            else
-                stmt.setInt(6, 0);
+            if (model.equals("")) stmt.setInt(6, 1);
+            else stmt.setInt(6, 0);
 
             stmt.setInt(7, yearFrom);
             stmt.setInt(8, yearTo);
 
-            if(yearFrom < 0 )
-                stmt.setInt(9, 1);
-            else
-                stmt.setInt(9, 0);
+            if (yearFrom < 0) stmt.setInt(9, 1);
+            else stmt.setInt(9, 0);
 
             stmt.setInt(10, priceFrom);
             stmt.setInt(11, priceTo);
 
-            if(priceFrom < 0 )
-                stmt.setInt(12, 1);
-            else
-                stmt.setInt(12, 0);
+            if (priceFrom < 0) stmt.setInt(12, 1);
+            else stmt.setInt(12, 0);
 
 
             rs = stmt.executeQuery();
@@ -219,8 +207,37 @@ public class AdvertisementDAO {
         return null;
     }
 
+    public List<Integer> selectAllCarIdsByUserId(Integer user_id) throws DAOException {
+        List<Integer> car_ids = new ArrayList<>();
+
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+
+
+        String query = "SELECT car_id from advertisement where advertisement.user_id = " + user_id;
+
+        try (Connection conn = ConnectionPool.getConnection()) {
+
+            stmt = conn.prepareStatement(query);
+
+            rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                car_ids.add(rs.getInt("car_id"));
+            }
+
+            return car_ids;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.closeResultSet(rs);
+            DBUtil.closeStatement(stmt);
+        }
+        return null;
+    }
+
     public List<Advertisement> selectAllByUserId(Integer user_id) throws DAOException {
-        System.out.println(user_id);
         List<Advertisement> ads = new ArrayList<>();
 
         Advertisement ad;
@@ -251,9 +268,7 @@ public class AdvertisementDAO {
                 ad.setCar(car);
                 ads.add(ad);
             }
-            for (Advertisement advertisement : ads) {
-                System.out.println(advertisement);
-            }
+
 
             return ads;
         } catch (SQLException e) {

@@ -31,7 +31,6 @@ public class AdminProfileController extends AbstractController {
 
         try {
 
-            System.out.println(session.getAttribute("id"));
 
             ads = adDAO.selectAllByUserId((Integer) session.getAttribute("id"));
 

@@ -33,7 +33,6 @@ public class CarPage extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
-        System.out.println(req.getParameter("ad_id"));
         session.setAttribute("ad_id", req.getParameter("ad_id"));
 
         Integer id = Integer.parseInt(req.getParameter("ad_id"));
