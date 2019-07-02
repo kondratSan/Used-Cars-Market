@@ -84,14 +84,6 @@
                                     <input type="text" class="form-control" name="phoneNumber"
                                            placeholder="Phone number" required>
                                 </div>
-                                <%--<div class="input-group form-group">--%>
-                                <%--<select class="browser-default custom-select" >--%>
-                                <%--<option selected>Region</option>--%>
-                                <%--<option value="1">Region1</option>--%>
-                                <%--<option value="2">Region2</option>--%>
-                                <%--<option value="3">Region3</option>--%>
-                                <%--</select>--%>
-                                <%--</div>--%>
                                 <div class="input-group form-group">
                                     <input type="text" class="form-control" name="city" placeholder="City" required>
                                 </div>
@@ -114,6 +106,3 @@
     </div>
 </div>
 
-<form action="/test">
-    <input type="submit" value="submit">
-</form>

@@ -41,3 +41,47 @@
         </div>
     </div>
 </div>
+
+<div style="text-align: center" class="m-5">
+    <h1 id="sellCarTitle">My cars for sale</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <c:forEach var="ad" items="${adList}">
+            <div class="col-12 mt-3">
+                <form action="/car" id="${ad.id}">
+                    <input type="hidden" name="ad_id" value="${ad.id}">
+                    <div class="row">
+                        <a href="javascript:{}"
+                           onclick="document.getElementById('${ad.id}').submit(); return false;">
+                            <div  style="height: 200px; width: 350px; overflow: hidden">
+                                <img src="data:image/jpg;base64,${ad.car.photo1out}" alt="" style="max-height: 100%" class="img-fluid">
+                            </div>
+                        </a>
+                        <div class="col-lg-4">
+                            <a href="javascript:{}"
+                               onclick="document.getElementById('${ad.id}').submit(); return false;">
+                                <span class="carSearchTitle"
+                                      style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden">${ad.title}title</span>
+                                <br>
+                            </a>
+                            <span class="carSearchPrice"><b>${ad.price} $</b></span> <br>
+                            <span> <i class="fa fa-map-marker" aria-hidden="true"></i> ${ad.user.city} </span> <br>
+                            <br>
+                            <div class="carSearchDesc">
+                                <span>${ad.description}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <hr class="searchCarLine">
+                    </div>
+
+                </form>
+            </div>
+        </c:forEach>
+
+    </div>
+
+</div>

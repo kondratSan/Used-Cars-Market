@@ -17,9 +17,12 @@ public class LoggedCarFilter extends HttpFilter {
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         HttpSession session = req.getSession(true);
 
+        session.setAttribute("ad_id", req.getParameter("ad_id"));
+
         if (session.getAttribute("user") == null) {
             chain.doFilter(req, res);
         } else {
+
             res.sendRedirect("/loggedCar");
         }
     }

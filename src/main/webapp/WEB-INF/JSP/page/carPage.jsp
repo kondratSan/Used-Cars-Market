@@ -14,14 +14,14 @@
         <div class="col-md-6 blank"></div>
 
         <%--<h1>--%>
-            <%--<%--%>
-                <%--response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");--%>
-            <%--%>--%>
+        <%--<%--%>
+        <%--response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");--%>
+        <%--%>--%>
         <%--</h1>--%>
 
         <div class="col-12">
-            <span><h2 class="carPageTitle"><b>Hyundai Title of the car Hyundai Hyundai <br></b></h2></span><br>
-            <span><h2 class="carPagePrice"><b>29&nbsp;700&nbsp;$</b></h2></span>
+            <span><h2 class="carPageTitle"><b>${ad.title} <br></b></h2></span><br>
+            <span><h2 class="carPagePrice"><b>${ad.price}&nbsp;$</b></h2></span>
             <hr class="carPageLine">
         </div>
         <div class="col-12 col-lg-4 pl-4 pt-2 mb-3 order-lg-2">
@@ -31,19 +31,17 @@
                     <div class="row">
                         <div class="col-5 pl-5">
                             <img class id="sellerIcon" src="../../../static/img/sellerIcon.png" alt=""><br><br>
-                            <span>Region</span><br><br>
                             <span>City</span><br><br>
                             <span>Phone</span><br><br>
                             <span>Email</span><br><br>
                             <span>Age</span><br><br>
                         </div>
                         <div class=" mt-2 col-7 carSellSellerDivRightSide">
-                            <span> Sasha Kondrat</span><br><br>
-                            <span> Zakarpattya</span><br><br>
-                            <span> Uzhgorod</span><br><br>
-                            <span> +380505394006</span><br><br>
-                            <span> alexkondrat1@gmail.com</span><br><br>
-                            <span> 19</span><br><br>
+                            <span> ${ad.user.firstName} ${ad.user.lastName}</span><br><br>
+                            <span> ${ad.user.city}</span><br><br>
+                            <span> ${ad.user.phoneNumber}</span><br><br>
+                            <span> ${ad.user.email}</span><br><br>
+                            <span> ${ad.user.age}</span><br><br>
                         </div>
                     </div>
 
@@ -63,13 +61,16 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="data:image/jpg;base64,${car.photo1out}" alt="First slide">
+                            <img class="d-block w-100" src="data:image/jpg;base64,${ad.car.photo1out}"
+                                 alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="data:image/jpg;base64,${car.photo2out}" alt="Second slide">
+                            <img class="d-block w-100" src="data:image/jpg;base64,${ad.car.photo2out}"
+                                 alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="data:image/jpg;base64,${car.photo3out}" alt="Third slide">
+                            <img class="d-block w-100" src="data:image/jpg;base64,${ad.car.photo3out}"
+                                 alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -111,51 +112,35 @@
                 </b>
                 </div>
                 <div class="col-8">
-                    <span>${car.category}</span><br>
+                    <span>${ad.car.category}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>${car.carYear}</span><br>
+                    <span>${ad.car.carYear}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>${car.fuel}</span><br>
+                    <span>${ad.car.fuel}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>${car.engineVolume}L ${car.enginePower} h.p.</span><br>
+                    <span>${ad.car.engineVolume}L ${ad.car.enginePower} h.p.</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>${car.transmission}</span><br>
+                    <span>${ad.car.transmission}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>${car.carDrive}</span><br>
+                    <span>${ad.car.carDrive}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>${car.color}</span><br>
+                    <span>${ad.car.color}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
-                    <span>${car.kilometrage}</span><br>
+                    <span>${ad.car.kilometrage}</span><br>
                     <hr class="carPageInfoLine">
                     <br>
                 </div>
                 <div class="col-12">
                     <span><b>Description</b></span> <br><br>
                     <div class="carSellDescription">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamu
-                        s aliquid amet animi asperiores assumenda beatae cum debitis deserunt disti
-                        nctio dolores eaque eos eum id illo impedit iste itaque iusto libero maiores min
-                        us molestiae nemo nesciunt nisi, numquam officia, officiis omnis placeat praesentiu
-                        m qui quis ratione repellat rerum sint suscipit tempore ut! Adipisci, architecto aute
-                        m dolorum et explicabo id impedit inventore iste magni maxime minima mollitia nam nequ
-                        e odit omnis quis repellat repellendus, sed ullam, voluptate? Aspernatur at, corporis id
-                        llo impedit molestiae molestias provident quaerat rem tempore. Assumenda atque aut beatae b
-                        landitiis doloremque dolores et facilis modi nesciunt numquam pariatur placeat, provident sint
-                        tenetur vitae! Asperiores assumenda consequatur, dicta dolor ex, excepturi fuga in maxime minus,
-                        nostrum provident quam quibusdam sapiente sed sit velit voluptatibus! Aspernatur, consectetur dicta
-                        doloremque ducimus eius iste nobis numquam pariatur, quo quos tempore unde! Aliquid aspernatur, at b
-                        landitiis consectetur culpa cumque dolor ducimus ea earum enim error eum fuga fugit ipsa iusto magnam
-                        molestias nemo nisi non omnis perspiciatis placeat quasi quia quidem recusandae reprehenderit voluptates v
-                        oluptatibus. Accusantium cum dolor eligendi eos eum exercitationem facere fugit impedit iure nulla obcaeca
-                        ti odio pariatur, perferendis perspiciatis placeat porro possimus
-                        provident quasi, quidem soluta temporibus tenetur vel!</span>
+                        <span>${ad.description}</span>
 
                     </div>
                 </div>

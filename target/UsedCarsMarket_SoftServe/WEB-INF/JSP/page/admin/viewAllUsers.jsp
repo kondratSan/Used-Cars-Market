@@ -25,8 +25,7 @@
 
 
 <div class="container">
-    <c:forEach var="user" items="${userList}">
-
+    <c:forEach var="user"  items="${userList}">
         <div class="row">
             <div class="col-12 mt-3">
                 <div class="row shadow viewUserCard p-5">
