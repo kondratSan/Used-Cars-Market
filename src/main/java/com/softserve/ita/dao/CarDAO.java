@@ -123,7 +123,6 @@ public class CarDAO {
                 Blob blob3 = result.getBlob("photo3");
 
 
-                //////////1
                 InputStream inputStream1 = blob1.getBinaryStream();
                 ByteArrayOutputStream outputStream1 = new ByteArrayOutputStream();
                 byte[] buffer1 = new byte[4096];
@@ -141,7 +140,6 @@ public class CarDAO {
 
                 car.setPhoto1out(base64Image1);
 
-                //////////2
                 InputStream inputStream2 = blob2.getBinaryStream();
                 ByteArrayOutputStream outputStream2 = new ByteArrayOutputStream();
                 byte[] buffer2 = new byte[4096];
@@ -159,7 +157,6 @@ public class CarDAO {
 
                 car.setPhoto2out(base64Image2);
 
-                //////////3
                 InputStream inputStream3 = blob3.getBinaryStream();
                 ByteArrayOutputStream outputStream3 = new ByteArrayOutputStream();
                 byte[] buffer3 = new byte[4096];
@@ -188,7 +185,6 @@ public class CarDAO {
                 car.setCarDrive(carDrive);
                 car.setKilometrage(kilometrage);
                 car.setColor(color);
-
 
             }
 

@@ -2,7 +2,6 @@ package com.softserve.ita.controller.page;
 
 import com.softserve.ita.controller.AbstractController;
 import com.softserve.ita.dao.AdvertisementDAO;
-import com.softserve.ita.dao.UserDAO;
 import com.softserve.ita.exception.DAOException;
 import com.softserve.ita.model.Advertisement;
 

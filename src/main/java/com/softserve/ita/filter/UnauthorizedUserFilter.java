@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebFilter(urlPatterns = {"/sellCar"})
+@WebFilter("/sellCar")
 public class UnauthorizedUserFilter extends HttpFilter {
 
     @Override

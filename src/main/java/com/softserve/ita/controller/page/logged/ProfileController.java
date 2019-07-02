@@ -15,7 +15,7 @@ import java.util.List;
 
 @WebServlet("/profile")
 public class ProfileController extends AbstractController {
-    AdvertisementDAO adDAO;
+    private AdvertisementDAO adDAO;
 
     @Override
     public void init() throws ServletException {

@@ -14,7 +14,7 @@ import java.util.List;
 
 @WebServlet("/loggedHome")
 public class LoggedHomeController extends AbstractController {
-    AdvertisementDAO adDAO;
+    private AdvertisementDAO adDAO;
 
     @Override
     public void init() throws ServletException {
@@ -34,6 +34,7 @@ public class LoggedHomeController extends AbstractController {
             forwardToPageLogged("page/home.jsp", req, resp);
 
         } catch (DAOException e) {
+
             e.printStackTrace();
         }
     }

@@ -41,8 +41,9 @@
     </div>
     <div class="offset-1 col-12 col-md-2 my-5 d-flex justify-content-center">
         <div class="row">
-            <div class="col-12" ></div>
-            <button class="btn btn-danger" type="button" onclick="window.location.href = '/user-list'" style="height: 50px;">
+            <div class="col-12"></div>
+            <button class="btn btn-danger" type="button" onclick="window.location.href = '/user-list'"
+                    style="height: 50px;">
                 View all users
             </button>
         </div>
@@ -64,8 +65,9 @@
                     <div class="row">
                         <a href="javascript:{}"
                            onclick="document.getElementById('${ad.id}').submit(); return false;">
-                            <div  style="height: 200px; width: 350px; overflow: hidden">
-                                <img src="data:image/jpg;base64,${ad.car.photo1out}" alt="" style="max-height: 100%" class="img-fluid">
+                            <div style="height: 200px; width: 350px; overflow: hidden">
+                                <img src="data:image/jpg;base64,${ad.car.photo1out}" alt="" style="max-height: 100%"
+                                     class="img-fluid">
                             </div>
                         </a>
                         <div class="col-lg-4">

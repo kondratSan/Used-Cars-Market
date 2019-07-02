@@ -97,8 +97,9 @@
                     <div class="row">
                         <a href="javascript:{}"
                            onclick="document.getElementById('${ad.id}').submit(); return false;">
-                            <div  style="height: 200px; width: 350px; overflow: hidden">
-                                <img src="data:image/jpg;base64,${ad.car.photo1out}" alt="" style="max-height: 100%" class="img-fluid">
+                            <div style="height: 200px; width: 350px; overflow: hidden">
+                                <img src="data:image/jpg;base64,${ad.car.photo1out}" alt="" style="max-height: 100%"
+                                     class="img-fluid">
                             </div>
                         </a>
                         <div class="col-lg-4">

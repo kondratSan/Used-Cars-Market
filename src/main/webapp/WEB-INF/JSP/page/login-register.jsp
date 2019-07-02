@@ -29,7 +29,7 @@
                                                             <span class="input-group-text"><i
                                                                     class="fa fa-user"></i></span>
                                     </div>
-                                    <input type="email" class="form-control" name="email" placeholder="Email"  required>
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
 
                                 </div>
                                 <div class="input-group form-group">
@@ -41,7 +41,8 @@
                                            placeholder="Password" required>
                                 </div>
                                 <div class="errRegMessage">
-                                    <%=(request.getAttribute("loginErrMessage") == null) ? "" : request.getAttribute("loginErrMessage")%></div>
+                                    <%=(request.getAttribute("loginErrMessage") == null) ? "" : request.getAttribute("loginErrMessage")%>
+                                </div>
                                 <div class="form-group mt-4">
                                     <input type="submit" value="Login"
                                            class="btn float-right login_btn">
@@ -65,7 +66,8 @@
                         <form onsubmit="return validate()" action="/user" method="post">
                             <div class="container">
                                 <div class="errRegMessage">
-                                    <%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%></div>
+                                    <%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%>
+                                </div>
                                 <div class="input-group form-group">
                                     <input type="text" class="form-control" name="firstName" placeholder="First Name"
                                            required>

@@ -17,7 +17,7 @@ import java.util.List;
 @WebServlet("/loggedSearch")
 public class LoggedSearchController extends AbstractController {
 
-    AdvertisementDAO adDAO;
+    private AdvertisementDAO adDAO;
 
     @Override
     public void init() throws ServletException {

@@ -17,9 +17,9 @@ import java.io.IOException;
 @WebServlet("/loggedCar")
 public class LoggedCarController extends AbstractController {
 
-    CarDAO carDAO;
-    UserDAO userDAO;
-    AdvertisementDAO adDAO;
+    private CarDAO carDAO;
+    private UserDAO userDAO;
+    private AdvertisementDAO adDAO;
 
     @Override
     public void init() throws ServletException {

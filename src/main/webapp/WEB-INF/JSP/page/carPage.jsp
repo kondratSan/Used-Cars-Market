@@ -13,12 +13,6 @@
         <div class="col-md-6 blank"></div>
         <div class="col-md-6 blank"></div>
 
-        <%--<h1>--%>
-        <%--<%--%>
-        <%--response.sendRedirect("https://www.tutorialspoint.com/jsp/jstl_core_if_tag.htm");--%>
-        <%--%>--%>
-        <%--</h1>--%>
-
         <div class="col-12">
             <span><h2 class="carPageTitle"><b>${ad.title} <br></b></h2></span><br>
             <span><h2 class="carPagePrice"><b>${ad.price}&nbsp;$</b></h2></span>

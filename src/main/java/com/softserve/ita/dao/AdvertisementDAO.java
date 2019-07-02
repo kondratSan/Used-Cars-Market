@@ -7,8 +7,6 @@ import com.softserve.ita.model.User;
 import com.softserve.ita.util.ConnectionPool;
 import com.softserve.ita.util.DBUtil;
 
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -25,7 +23,7 @@ public class AdvertisementDAO {
 
         Integer car_id = ad.getCar_id();
         String description = ad.getDescription();
-        Integer price = ad.getPrice();
+        int price = ad.getPrice();
         String title = ad.getTitle();
         Integer user_id = ad.getUser_id();
         PreparedStatement statement = null;

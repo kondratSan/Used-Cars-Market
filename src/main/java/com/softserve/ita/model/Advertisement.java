@@ -1,6 +1,5 @@
 package com.softserve.ita.model;
 
-import java.io.FileInputStream;
 import java.util.Objects;
 
 public class Advertisement {

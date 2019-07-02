@@ -19,9 +19,9 @@ public class CarPage extends AbstractController {
 
 
 
-    CarDAO carDAO;
-    UserDAO userDAO;
-    AdvertisementDAO adDAO;
+    private CarDAO carDAO;
+    private UserDAO userDAO;
+    private AdvertisementDAO adDAO;
 
     @Override
     public void init() throws ServletException {
